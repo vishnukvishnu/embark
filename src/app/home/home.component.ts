@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   gaugethick = 6;
   gaugesize = 150;
   foregroundColor = "greenyellow";
-  backgroundColor ="white";
+  backgroundColor ="#fff";
   gaugecap = "round";
   minvalue = "0";
   maxvalue = "15";

@@ -55,7 +55,7 @@ button:focus {
   }
 
 .background-ruby{
-    background:color(ruby-red);
+    background:color(#eb3542);
 }
 .background-yellow{
     background:color( sunny-yellow) !important;
@@ -73,7 +73,7 @@ button:focus {
     background:color(apple-green);
 }
 .font-ruby{
-    background:color(ruby-red);
+    background:color(#eb3542);
 }
 .font-yellow{
     background:color( sunny-yellow);
@@ -219,7 +219,10 @@ padding-right: 30px;
     font-size: 50px !important;
     font-family: 'AkkuratStd-Regular';
     line-height: 125px !important;
+    bottom: 70px !important;
+    right: 4px !important;
 }
+
 /* Icons  */
 
 

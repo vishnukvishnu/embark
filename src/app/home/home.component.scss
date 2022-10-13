@@ -1,5 +1,5 @@
 
-@import '/../../scss/variables';
+// @import '/../../scss/variables';
 
 
   /* SECTION ONE */
@@ -17,7 +17,7 @@
     padding-top: 80px;
     font-weight: 600;
     .red-circle {
-        background:color(ruby-red);
+        background:#eb3542;
         width: 410px;
         height: 375px;
         border-radius: 50%;
@@ -31,13 +31,13 @@
 
         .welcome-message{
             z-index:1;
-            border-right: 1px dotted color(white);
+            border-right: 1px dotted #fff;
             margin-top: 60px;
             padding-right: 25px;
 
             h2{
-                color:color(sunny-yellow);
-                border-bottom: 2px solid color(sunny-yellow);
+                color:#ffda29;
+                border-bottom: 2px solid #ffda29;
                 font-size: 36px;
                 padding-left: 55px;
                 font-family:akkurat-mono;
@@ -45,7 +45,7 @@
             }
 
             p{
-                color:color(light-gray);
+                color:#F2F2F2;
                 font-size: 18px;
                 padding: 50px 90px 50px 60px;
                 line-height: 28px;
@@ -56,19 +56,19 @@
             padding-left: 110px;
 
             .count-circle  {
-                color:color(apple-grean);
+                color:#6CC24A;
               }
            
               .days-remains-caption{
                 margin-top: 15px;
                 p{
-                    color: color(white);    
+                    color: #fff;    
                     font-size: 20px;
                     margin-bottom: 0px;
                         margin-left: 20px;
                 }
                 span{
-                    color:color(sunny-yellow); 
+                    color:#ffda29; 
                     font-size: 30px;
                     text-align: center;
                 }
@@ -83,7 +83,7 @@
   
 .second-section {
     .profile-navigation{
-        background:color(navy-blue);
+        background:#0e3570;
         height: 575px;
         .row{
             width:94%;
@@ -100,9 +100,9 @@
                 .count-circle{
                     width: 140px;
                     height: 140px;
-                    border-radius: $border-radius;
+                    border-radius: 50%;
                     font-size: 25px;
-                    color: color(white);
+                    color: #fff;
                     line-height: 15px;
                     text-align: center;
                     background:white;
@@ -113,17 +113,17 @@
                         width: 80px;
                     }
                     .gcompletion-circle{
-                        background: color(apple-grean);
+                        background: #6CC24A;
                     }
                     .rcompletion-circle{
-                        background: color(ruby-red) ;
+                        background: #eb3542 ;
                     }
                     .completion-circle{
                         content: "";
                         width: 40px;
                         height: 40px;
                         display: inline-block;
-                        border-radius: $border-radius;
+                        border-radius: 50%;
                         position: absolute;
                         top: 115px;
                         right: 115px;
@@ -145,7 +145,7 @@
                  .profie-details{
                     font-family: 'AkkuratStd-Light';
                     p{
-                        color: color(sunny-yellow);
+                        color: #ffda29;
                         font-size: 22px;
                         margin-bottom: 5px;
                         margin-top: 50px;
@@ -172,7 +172,7 @@
                     button{
                         color: white;
                         border: 1px solid white;
-                        background: color(navy-blue);
+                        background: #0e3570;
                         margin-top: 30px;
                         margin-left: 5px;
                         padding: 10px 20px 7px 20px;
@@ -181,7 +181,7 @@
                     }
                    
                     button:hover{
-                        background: color(sunny-yellow);
+                        background: #ffda29;
                         color:black
                        
                       }
@@ -196,7 +196,7 @@
         height: 1025px;  
         .manager-details{
             padding-bottom: 50px;
-            background: color(white);
+            background: #fff;
             width: 92%;
             margin-left: 4% !important;
             border-radius: 10px;
@@ -217,7 +217,7 @@
                 margin-left: 30px;
 
                 img{
-                    border-radius: $border-radius;
+                    border-radius: 50%;
                     width:100px;
                     height:100px;   
                 }
@@ -255,7 +255,7 @@
                     }
                 }
                 .role{
-                    color: color(skyblue);
+                    color: #009CDE;
                 }
             }
             .meting-image-display{
@@ -277,13 +277,13 @@
                   font-size: 40px;
              }
              .icon-location{
-                color:color(ruby-red);
+                color:#eb3542;
              }
              .icon-sublocation{
-                color:color(apple-grean);
+                color:#6CC24A;
              }
              .icon-hotel_building {
-                color:color(skyblue);
+                color:#009CDE;
              }
     
           .location-details{
@@ -292,7 +292,7 @@
                
                 span{
                     font-size: 14px;
-                    color:color(gray);
+                    color:#646363;
                 }
                 p{
                     font-size: 16px;
@@ -300,16 +300,16 @@
            }
             }
            .profile-detailsb-button{
-            color: color(black);
+            color: #000;
             border: 1px solid #b9b7b7;
-            background: color(white);
+            background: #fff;
             margin-top: 20px;
             padding: 6px 15px;
             margin-left: 50px;
            }
         }
         .personal-details{
-            background: color(white);
+            background: #fff;
             width: 92%;
             margin-left: 4% !important;
             border-radius: 10px;
@@ -323,11 +323,11 @@
                   margin-bottom: 35px;
                   span{
                     content: "";
-                    background: color(sunny-yellow);
+                    background: #ffda29;
                     width: 45px;
                     height: 45px;
                     display: inline-block;
-                    border-radius: $border-radius;
+                    border-radius: 50%;
                 }
                 p{
                     font-size: 20px;
@@ -340,13 +340,13 @@
               }
                .row {
                 .gborderbottom{
-                    border-bottom: 3px solid color(apple-grean);
+                    border-bottom: 3px solid #6CC24A;
                 }
                 .rborderbottom{
-                    border-bottom: 3px solid color(ruby-red);
+                    border-bottom: 3px solid #eb3542;
                 }
                 .bborderbottom{
-                    border-bottom: 3px solid color(navy-blue);
+                    border-bottom: 3px solid #0e3570;
                 }
                 .col-md-4  {    
                     flex: 0 0 29.333333%;
@@ -355,32 +355,32 @@
                     margin-bottom: 75px;
                     background:#f2f2f2;
                     .greenborder{
-                        border: 1px solid color(apple-grean);
-                        color:color(apple-grean) !important;
+                        border: 1px solid #6CC24A;
+                        color:#6CC24A !important;
                     }
                     .redborder{
-                        border: 1px solid color(ruby-red);
-                        color:color(ruby-red) !important;
+                        border: 1px solid #eb3542;
+                        color:#eb3542 !important;
                     }
                     .blueborder{
-                        border: 1px solid color(navy-blue);
-                        color:color(navy-blue) !important;  
+                        border: 1px solid #0e3570;
+                        color:#0e3570 !important;  
                     }
                     .gcolor{
-                        color:color(apple-grean) !important;
+                        color:#6CC24A !important;
                     }
                     .rcolor{
-                        color:color(ruby-red) !important;
+                        color:#eb3542 !important;
                     }
                     .bcolor{
-                        color:color(navy-blue) !important;  
+                        color:#0e3570 !important;  
                     }
                .count-circle  {
                 width: 85px;
                 height: 85px;
-                border-radius: $border-radius;
+                border-radius: 50%;
                 font-size: 25px;
-                color: color(white);
+                color: #fff;
                 line-height: 15px;
                 text-align: center;
                 padding-top: 20px;
@@ -392,7 +392,7 @@
               }
               
               .model {
-                color:color(skyblue);
+                color:#009CDE;
                 margin-right: 5px;
                 margin-top: 20px;
                 text-align: center;
@@ -427,10 +427,10 @@
         overflow: hidden;
     }
     .blue-half-circle {
-        background:color(navy-blue);
+        background:#0e3570;
     width:285px;
     height:285px;
-    border-radius: $border-radius;
+    border-radius: 50%;
     position: absolute;
     top: -25px;
     left: 65px;
@@ -447,8 +447,8 @@
     
     }
     .map-image-container .place-details h2{
-        color: color(sunny-yellow);
-        border-bottom: 2px solid color(sunny-yellow);
+        color: #ffda29;
+        border-bottom: 2px solid #ffda29;
         font-size: 34px;
         margin-right: 155px;
         padding-left: 110px;
@@ -456,23 +456,23 @@
     }
     .map-image-container .place-details p{
         padding-left: 110px;
-        color: color(white);
+        color: #fff;
         font-size: 20px;
         padding-top: 10px;
     }
     .map-image-container .location-details p{
-        color: color(white);
+        color: #fff;
         font-size: 24px;
     }
     .location-detials  h3{
-    color: color(sunny-yellow);
+    color: #ffda29;
     font-size: 22px;
    }
     .map-image-container .location-icon{
         width: 60px;
         height: 60px;
-        border-radius: $border-radius;
-        background:color(sunny-yellow);
+        border-radius: 50%;
+        background:#ffda29;
         float: left;
                .icon-location {
         font-size: 30px;
@@ -497,7 +497,7 @@
     .map-container{
         width:100%;
         height: 500px;
-        background:color(sunny-yellow);
+        background:#ffda29;
         agm-map {
             height: 625px;
         }
@@ -515,7 +515,7 @@
     }
     
 #googleMap{
-    background: color(white);
+    background: #fff;
     width: 92%;
     margin-left: 4% !important;
     border-radius: 10px;
@@ -534,7 +534,7 @@
     background: #f2f2f2;
     height: 625px;  
     .job-details{
-        background: color(white);
+        background: #fff;
         width: 92%;
         margin-left: 4% !important;
         border-radius: 10px;
@@ -555,7 +555,7 @@
             margin-top: 20px;
             margin-bottom: 35px;
             .role{
-                color: color(navy-blue);
+                color: #0e3570;
                 font-size: 18px;
                 font-weight: bold;
                 margin-bottom: 0px;
@@ -565,7 +565,7 @@
                 font-size: 14px !important;
             }
             .faded{
-                color: color(gray);
+                color: #646363;
                 margin-bottom: 0px;
                 font-size: 16px;
             }
@@ -575,8 +575,8 @@
                 font-size: 16px;
             }
             button{
-                color: color(white);
-                background: color(navy-blue);
+                color: #fff;
+                background: #0e3570;
                 margin-top: 30px;
                 margin-bottom: 25px;
                 padding: 8px 20px;
@@ -589,7 +589,7 @@
                 height: 8px;
                 width: 8px;
                 background-color: lightgray;
-                border-radius: $border-radius;
+                border-radius: 50%;
                 display: inline-block;
                 margin-left: 15px;
           }
@@ -603,14 +603,14 @@
 /* FIFTH SECTION */
 
 .fift-section{
-    background: color(white);
+    background: #fff;
     height: auto;  
     .title-md{
         padding-left: 100px;
         margin-top: 75px;
         margin-bottom:0px;
         font-size:36px; 
-        color:color(ruby-red);
+        color:#eb3542;
     }
     .imagec-container{
         position: relative;
@@ -683,7 +683,7 @@
         .recomented-job-details{
             position: absolute;
             left:25px;
-            color:color(white);
+            color:#fff;
             cursor: pointer;
 
             .detail-description{
@@ -704,7 +704,7 @@
             }
             button{
                 font-size: 16px;
-                 color: color(white);
+                 color: #fff;
             display: block;
             border: none;
             font-family: 'akkurat-mono';
@@ -726,10 +726,10 @@
     background: #f2f2f2;
     height: auto;  
     .title-md{
-        color: color(navy-blue);
+        color: #0e3570;
         margin-top: 50px;
         padding-left: 110px;
-        border-bottom: 1px solid  color(navy-blue);
+        border-bottom: 1px solid  #0e3570;
         display: inline-block;
         margin-bottom: 25px;
         font-size: 36px;
@@ -743,7 +743,7 @@
         padding-bottom: 1px;
     button{
         font-size: 16px;
-         color: color(white);
+         color: #fff;
     display: block;
     border: none;
     margin-top: 25px;
@@ -772,7 +772,7 @@
         top: 375px;
         margin-left: 25px;
         position: absolute;
-        color:color(white);
+        color:#fff;
     }
 }
     .second-section {
@@ -786,7 +786,7 @@
             top: 175px;
             margin-left: 25px;  
             position: absolute;
-            color:color(white);
+            color:#fff;
         }
     }
 
@@ -797,12 +797,12 @@
        /* LAST SECTION */
        .last-section{
         height: auto;
-        background: color(navy-blue);
+        background: #0e3570;
         .title-md{
-            color: color(sunny-yellow);
+            color: #ffda29;
         margin-top: 50px;
         padding-left: 100px;
-        border-bottom: 1px solid color(sunny-yellow);
+        border-bottom: 1px solid #ffda29;
         display: inline-block;
         margin-bottom: 65px;
         font-family: 'akkurat-mono';
@@ -835,7 +835,7 @@
             left: 250px;
             span{
                 position: absolute;
-            color: color(white);
+            color: #fff;
             font-size: 45px;
             top: 15px;
             left: 18px;
@@ -843,8 +843,8 @@
             
         }
         .header{
-            color: color(navy-blue);
-            border-bottom: 1px solid color(navy-blue);
+            color: #0e3570;
+            border-bottom: 1px solid #0e3570;
             padding-left: 30px;
             display: inline-block;
             font-size: 26px;
@@ -860,13 +860,13 @@
         }
         .date{
             padding-left: 30px;
-            color: color(gray);
+            color: #646363;
             font-size: 16px;
         }
         .description{
             padding:15px 10px 0px 30px;
             a{
-                color:color(skyblue);   
+                color:#009CDE;   
                
             }
             span{
@@ -880,7 +880,7 @@
             height: 8px;
             width: 8px;
             background-color: lightgray;
-            border-radius: $border-radius;
+            border-radius: 50%;
             display: inline-block;
             margin-left: 8px;
       }
@@ -905,8 +905,8 @@
 .more-link-wrapper .dot {
     height:5px;
     width: 5px;
-    background-color: color(gray);
-    border-radius: $border-radius;
+    background-color: #646363;
+    border-radius: 50%;
     margin-left: 6px;
     display: inline-block;
     float: left;
@@ -951,7 +951,7 @@
 
   .items{
     max-width: 400px;
-    background:color(white);
+    background:#fff;
     margin-left: 6px;
     margin-right: 6px;
     margin-top: 10px;

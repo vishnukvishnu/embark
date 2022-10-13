@@ -1,11 +1,11 @@
-@import "/../../scss/variables";
+// @import "/../../scss/variables";
   
 
 /* HEADER SECTION */
 
 header{
     font-family: Akkurat-Bold;
-    background:color(white);
+    background:#fff;
     position: fixed;
     z-index: 2;
     width: 100%;
@@ -47,11 +47,11 @@ header{
         cursor: pointer;
         span{
             content: "";
-            background: color(skyblue) ;
+            background: #009CDE ;
             width: 30px;
             height: 30px;
             display: inline-block;
-            border-radius: $border-radius;
+            border-radius: 50%;
         }
         h3{
             font-size: 18px;
@@ -73,7 +73,7 @@ header{
         img{
             width:45px;
             height:45px;
-            border-radius:$border-radius;
+            border-radius:50%;
           } 
     }
     .icons{
@@ -93,8 +93,8 @@ header{
         }
         .notification-pop-over-wrapper{
             .detials-header{
-                color: color( navy-blue);
-                border-bottom: 1px solid color( navy-blue);
+                color: #0e3570;
+                border-bottom: 1px solid #0e3570;
                 padding-top: 0px;
                 padding-left: 30px;
                 margin-top: 15px;
@@ -106,16 +106,16 @@ header{
                     content: '';
                     width: 10px;
                     height: 10px;
-                    background: color(sunny-yellow);
-                    border-radius: $border-radius;
+                    background: #ffda29;
+                    border-radius: 50%;
                     display: inline-block;
                     margin-right: 15px;
                 }
                 li{
                     list-style-type: none;
-                    border-bottom:1px solid color(light-gray);
+                    border-bottom:1px solid #F2F2F2;
                     font-size: 15px;
-                    color:black;
+                    color:#000;
                     display: block;
                     width:auto;
                     padding: 8px 85px 8px 5px;
@@ -133,9 +133,9 @@ header{
         }
         .pop-over-wrapper{
             span{
-                border-bottom:1px solid color(light-gray);
+                border-bottom:1px solid #F2F2F2;
                 font-size: 15px;
-                color: color(black);
+                color: #000;
                 display: block;
                 width: auto;
                 padding: 8px 20px;

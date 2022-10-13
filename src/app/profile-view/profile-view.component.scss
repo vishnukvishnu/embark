@@ -1,10 +1,10 @@
 
-@import "/../../scss/variables";
+// @import "/../../scss/variables";
 /* offer-letter-view page */
 
 section{
     .offer-header-wrapper{
-       background: color(navy-blue);
+       background: #0e3570;
        width: 100%;
        height: 450px;
        font-family: AkkuratStd-Regular;
@@ -21,12 +21,12 @@ section{
                cursor: pointer;
             span{
                    font-size: 20px;
-                   color: color(sunny-yellow);
+                   color: #ffda29;
                    display: block;
                    float: left;
                }
                p{
-                   color: color(sunny-yellow);
+                   color: #ffda29;
                    padding-left: 15px;
                    display: inline-block;
                    margin-bottom: 15px;
@@ -39,7 +39,7 @@ section{
        height: 600px;
        background: #f2f2f2;
        .offer-let-details-subwrapper{
-           background: color(white);
+           background: #fff;
            width: 86%;
            margin-left: 7% !important;
            border-radius: 10px;
@@ -50,8 +50,8 @@ section{
            padding-bottom:35px;
            font-family:AkkuratStd-Regular;
            .title-md{
-               color: color(navy-blue);
-               border-bottom: 1px solid color(navy-blue);
+               color: #0e3570;
+               border-bottom: 1px solid #0e3570;
                padding-top: 35px;
                padding-left: 40px; 
            }  
@@ -113,7 +113,7 @@ section{
                 
                 button{
                     padding: 6px 20px;
-                    background: color(white);
+                    background: #fff;
                     border: 1px solid #909090;
                     height: 32px;
                 }
@@ -130,10 +130,10 @@ section{
 
 
 .title-md{
-    color:color(white);
+    color:#fff;
     margin-top:10px;
     padding-left:150px;
-    border-bottom: 1px solid color(white);
+    border-bottom: 1px solid #fff;
    display: inline-block;
    margin-bottom: 25px;
    font-family: 'akkurat-mono';
@@ -141,7 +141,7 @@ section{
 }
 .button-bold{
     font-size: 15px;
-    color: color(black);
+    color: #000;
     display: block;
     border:none;
     text-transform: uppercase;

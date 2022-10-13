@@ -1,4 +1,4 @@
-@import "/../../scss/variables";
+//@import "/../../scss/variables";
 
 //  Profile container
  
@@ -8,7 +8,7 @@ section{
         background:#f2f2f2;
      }
     .offer-header-wrapper{
-       background: color(navy-blue);
+       background: #0e3570;
        width: 100%;
        min-height: 530px;
        font-family: AkkuratStd-Regular;
@@ -23,10 +23,10 @@ section{
            p{
                padding-left: 150px;
                font-family: AkkuratStd-Regular;
-               color: color(white);
+               color: #fff;
                padding-right: 150px;
                span{
-                   color: color(sunny-yellow);
+                   color: #ffda29;
                }
            }
            .nav-back-home{
@@ -35,12 +35,12 @@ section{
             
             span{
                    font-size: 20px;
-                   color: color(sunny-yellow);
+                   color: #ffda29;
                    display: block;
                    float: left;
                }
                p{
-                   color: color(sunny-yellow);
+                   color: #ffda29;
                    padding-left: 15px;
                    display: inline-block;
                    margin-bottom: 15px;
@@ -50,7 +50,7 @@ section{
    }
 
        .offer-let-details-subwrapper{
-           background: color(white);
+           background: #fff;
            width: 86%;
            margin-left: 7% !important;
            border-radius: 10px;
@@ -60,8 +60,8 @@ section{
            height: auto;
            padding-bottom:35px;
            .title-md{
-               color: color(navy-blue);
-               border-bottom: 1px solid color(navy-blue);
+               color: #0e3570;
+               border-bottom: 1px solid #0e3570;
                padding-top: 35px;
                padding-left: 40px; 
            }
@@ -98,14 +98,14 @@ section{
                    float: left;
                    width: 70px;
                    height: 70px;
-                   border-radius: $border-radius;
+                   border-radius: 50%;
                    margin-top: 10px;
                    margin-bottom: 10px;
                    .icons{
                     padding-left: 8px;
                     margin-top: 8px;
                     display: inline-block;
-                    color:color(white);
+                    color:#fff;
                     height: 50px;
                     width: 50px;
                     margin-left: 6px;
@@ -144,7 +144,7 @@ section{
            }
            }
            .offer-letter{
-               border: 1px solid color(gray);
+               border: 1px solid #646363;
                margin:0px 50px;
                border-radius: 5px;
                img{
@@ -178,15 +178,15 @@ section{
                        pointer:auto !important;
                    }
                    button{
-                       background: color(white);
-                       border: 1px solid color(gray);
+                       background: #fff;
+                       border: 1px solid #646363;
                        float: left;
                        margin-left: 50px;
                        padding: 5px 25px;
                    }
                    .download-button{
-                       background: color(white);
-                       border: 1px solid color(gray);
+                       background: #fff;
+                       border: 1px solid #646363;
                        float: left;
                        margin-left: 25px;
                        
@@ -206,35 +206,35 @@ section{
                    font-size: 16px;
                    margin-top: 25px;
                    .green-circle {
-                    background:color(apple-grean);
+                    background:#6CC24A;
                    }
                    .red-circle{
-                    background: color(ruby-red);
+                    background: #eb3542;
                    }
                    .remark-icon-circle{
                        width: 30px;
                        height: 30px;
-                       border-radius: $border-radius;
+                       border-radius: 50%;
                        float: left;
                        margin-left: 25px;
                        margin-top: 10px;
                        .icon-close{
                            font-size: 20px;
-                           color: color(white);
+                           color: #fff;
                            padding-left: 5px;
                            padding-top: 5px;
                            display: inline-block;
                        }
                        .icon-info{
                         font-size: 20px;
-                        color: color(white);
+                        color: #fff;
                         padding-left: 5px;
                         padding-top: 5px;
                         display: inline-block;
                        }
                        .icon-check_mark{
                         font-size: 20px;
-                        color: color(white);
+                        color: #fff;
                         padding-left: 5px;
                         padding-top: 5px;
                         display: inline-block;
@@ -242,13 +242,13 @@ section{
                     
                    }
                    .date{
-                    border-right:1px solid gray;
+                    border-right:1px solid #646363;
                     padding-right: 15px;  
-                    color:color(black) !important;
+                    color:#000 !important;
                 }
                 .time{
                     padding-left: 15px;
-                    color:color(black) !important;
+                    color:#000 !important;
                 }
                    .status-msg{
                     display: block;
@@ -280,7 +280,7 @@ section{
                        span{
                            display: inline-block;
                         //    padding-top: 10px;
-                           color: color(ruby-red);
+                           color: #eb3542;
                            
                        }
                    }
@@ -300,7 +300,7 @@ section{
        top: 30px;
        min-height: 100px;
        .error-msg{
-        background: color(white);
+        background: #fff;
         width: 55%;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
@@ -311,7 +311,7 @@ section{
                margin-left: 25px;
                padding-top: 10px;
                margin-bottom: 10px;
-               color:color(ruby-red);
+               color:#eb3542;
                font-family: 'Akkurat-Bold';
            }
            span{
@@ -322,7 +322,7 @@ section{
                margin-left: 25px;
                margin-top: 8px;
                font-size: 25px;
-               color: color(ruby-red);
+               color: #eb3542;
            }
        }
        .button-wrapper{
@@ -335,7 +335,7 @@ section{
                padding: 5px 25px;
                border:1px solid #909090;
                margin-left: 16px;
-               background: color(white);
+               background: #fff;
                opacity: 0.8;
            }
            button:disabled{
@@ -346,10 +346,10 @@ section{
    }
    
    .title-md{
-       color:color(white);
+       color:#fff;
        margin-top:10px;
        padding-left:150px;
-       border-bottom: 1px solid color(white);
+       border-bottom: 1px solid #fff;
       display: inline-block;
       margin-bottom: 25px;
       font-family: 'akkurat-mono';
@@ -357,7 +357,7 @@ section{
    }
    .button-bold{
        font-size: 15px;
-       color: color(black);
+       color: #000;
        display: block;
        border:none;
        text-transform: uppercase;
@@ -369,11 +369,11 @@ section{
    }
 
    .rcolor{
-    background:color(ruby-red);
+    background:#eb3542;
    }
    .bcolor{
-    background:color(navy-blue);
+    background:#0e3570;
    }
    .gcolor{
-    background:color(apple-grean);
+    background:#6CC24A;
    }

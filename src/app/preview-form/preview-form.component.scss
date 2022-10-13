@@ -1,10 +1,10 @@
-@import "/../../scss/variables";
+// @import "/../../scss/variables";
 
 //  Profile container
  
 section{
     .offer-header-wrapper{
-       background: color(navy-blue);
+       background: #0e3570;
        width: 100%;
        height: 530px;
        font-family: AkkuratStd-Regular;
@@ -25,11 +25,11 @@ section{
         p{
             height: 35px;
             width: 35px;
-            background: color(sunny-yellow);
-            border-radius: $border-radius;
+            background: #ffda29;
+            border-radius: 50%;
 
         .icon-close{
-            color: color(black);
+            color: #000;
             font-size: 22px;
             position: absolute;
             top: 6px;
@@ -43,7 +43,7 @@ section{
        height: 925px;
        background:lavender;
        .offer-let-details-subwrapper{
-           background: color(white);
+           background: #fff;
            width: 86%;
            margin-left: 7% !important;
            border-radius: 10px;
@@ -61,17 +61,17 @@ section{
    }
    
    .title-md{
-       color:color(white);
+       color:#fff;
        margin-top:10px;
        padding-left:150px;
-       border-bottom: 1px solid color(white);
+       border-bottom: 1px solid #fff;
       display: inline-block;
       margin-bottom: 25px;
       font-family: 'akkurat-mono';
    }
    .button-bold{
        font-size: 15px;
-       color: color(black);
+       color: #000;
        display: block;
        border:none;
        text-transform: uppercase;
@@ -83,11 +83,11 @@ section{
    }
 
    .rcolor{
-    background:color(ruby-red);
+    background:#eb3542;
    }
    .bcolor{
-    background:color(navy-blue);
+    background:#0e3570;
    }
    .gcolor{
-    background:color(apple-grean);
+    background:#6CC24A;
    }
