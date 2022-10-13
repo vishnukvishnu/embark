@@ -7,7 +7,7 @@ import { MatDialogRef} from '@angular/material/dialog';
 import { PopoverModule } from 'ngx-bootstrap/popover';
 // import { AgmCoreModule } from '@agm/core';
 import { NgxGaugeModule } from 'ngx-gauge';
-// import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeService } from './services/home.service';
 import { OfferService } from './services/offer.service';
@@ -87,7 +87,7 @@ import {MatIconModule} from '@angular/material/icon';
     FormsModule,
     HttpClientModule,
     PdfViewerModule,
-    // Ng2CarouselamosModule,
+    Ng2CarouselamosModule,
     MatIconModule,
     // MatMomentDateModule,
     PopoverModule.forRoot(),
@@ -108,6 +108,6 @@ import {MatIconModule} from '@angular/material/icon';
                 BasketService,ProfileService,ProfileviewService,
                 OnlinformService
              ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
