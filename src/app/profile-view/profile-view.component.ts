@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+import {MatDialog} from '@angular/material/dialog';
 import {ActivatedRoute, Router} from '@angular/router';
 import { ProfileviewService } from '../services/profileview.service'
 import {EditJoinDateComponent } from '../pop-ups/edit-join-date/edit-join-date.component';

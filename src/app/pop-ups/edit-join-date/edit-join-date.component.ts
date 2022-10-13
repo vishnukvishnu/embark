@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MatDialogRef, MatDialog } from '@angular/material';
+import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 import { SuccessPopupComponent } from "../success-popup/success-popup.component";
-import { MAT_DIALOG_DATA } from '@angular/material';
+import {MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { MatIconRegistry } from "@angular/material/icon";
 import { DomSanitizer } from "@angular/platform-browser";
 // import {MomentDateAdapter} from '@angular/material-moment-adapter';

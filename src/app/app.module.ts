@@ -2,14 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import {MAT_DIALOG_DATA} from '@angular/material';
-import { MatDialogRef} from '@angular/material';
+// import {MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { MatDialogRef} from '@angular/material/dialog';
 import { PopoverModule } from 'ngx-bootstrap/popover';
-import { AgmCoreModule } from '@agm/core';
+// import { AgmCoreModule } from '@agm/core';
 import { NgxGaugeModule } from 'ngx-gauge';
-import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+// import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { HttpClientModule } from '@angular/common/http';
-import { HttpModule } from '@angular/http';
 import { HomeService } from './services/home.service';
 import { OfferService } from './services/offer.service';
 import { BasketService } from './services/jobBasket.service';
@@ -22,7 +21,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import {MatNativeDateModule} from '@angular/material';
+// import {MatNativeDateModule} from '@angular/material';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
@@ -48,8 +47,7 @@ import { PreviewFormComponent } from './preview-form/preview-form.component';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { MatIconModule } from "@angular/material/icon";
-// import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -83,20 +81,19 @@ import { MatIconModule } from "@angular/material/icon";
     MatDialogModule,
     AppRoutingModule, 
     MatDatepickerModule,
-    MatNativeDateModule,
+    // MatNativeDateModule,
     MatTabsModule,
     MatProgressSpinnerModule,
     FormsModule,
     HttpClientModule,
-    HttpModule,
     PdfViewerModule,
-    Ng2CarouselamosModule,
+    // Ng2CarouselamosModule,
     MatIconModule,
     // MatMomentDateModule,
     PopoverModule.forRoot(),
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDvnT8urY3tf-Jp75JgdTDW15NOOXaW4tA'
-    }),
+    // AgmCoreModule.forRoot({
+    //   apiKey: 'AIzaSyDvnT8urY3tf-Jp75JgdTDW15NOOXaW4tA'
+    // }),
     TooltipModule.forRoot(),
  
   ],
@@ -106,8 +103,7 @@ import { MatIconModule } from "@angular/material/icon";
                     ReferralLinkComponent,
                     GuideLinesComponent,
                     CngPswdComponent],
-  providers: [  { provide: MAT_DIALOG_DATA, useValue: {} },
-                { provide: MatDialogRef, useValue: {} },
+  providers: [ { provide: MatDialogRef, useValue: {} },
                 MatDatepickerModule,HomeService, OfferService,
                 BasketService,ProfileService,ProfileviewService,
                 OnlinformService

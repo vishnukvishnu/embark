@@ -1,0 +1,279 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import './variables';
+
+@font-face {
+    font-family: 'Akkurat-Bold';
+    src: url('/assets/fonts/Akkurat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'akkurat-mono';
+    src: url('/assets/fonts/akkurat-mono.ttf');
+}
+@font-face {
+    font-family: 'AkkuratStd-Bold';
+    src: url('/assets/fonts/AkkuratStd-Bold.otf');
+}
+@font-face {
+    font-family: 'AkkuratStd-BoldItalic';
+    src: url('/assets/fonts/AkkuratStd-BoldItalic.otf');
+}
+@font-face {
+    font-family: 'AkkuratStd-Italic';
+    src: url('/assets/fonts/AkkuratStd-Italic.otf');
+}
+@font-face {
+    font-family: 'AkkuratStd-Light';
+    src: url('/assets/fonts/AkkuratStd-Light.otf');
+}
+@font-face {
+    font-family: 'AkkuratStd-LightItalic';
+    src: url('/assets/fonts/AkkuratStd-LightItalic.otf');
+}
+@font-face {
+    font-family: 'AkkuratStd-Regular';
+    src: url('/assets/fonts/AkkuratStd-Regular.otf');
+}
+
+
+    /* Common for all */
+.row{
+    width:100%;
+}
+body{
+    font-size: 14px;
+}
+// common style for background
+button:focus {
+    outline:0;
+  }
+  button:hover{
+    cursor: pointer;
+  }
+
+.background-ruby{
+    background:color(ruby-red);
+}
+.background-yellow{
+    background:color( sunny-yellow) !important;
+  }
+ .background-navy{
+    background:color(navy-blue);
+}
+.background-green{
+    background:color(dark-green);
+}
+.background-light-green{
+    background:color(light-green);
+}
+.background-applegreen{
+    background:color(apple-green);
+}
+.font-ruby{
+    background:color(ruby-red);
+}
+.font-yellow{
+    background:color( sunny-yellow);
+  }
+ .font-navy{
+    background:color(navy-blue);
+}
+.font-green{
+    background:color(dark-green);
+}
+
+.button-bold{
+    font-size: 15px;
+    color: color(black);
+    display: block;
+    border:none;
+    text-transform: uppercase;
+    border-radius: 60px;
+    width: auto;
+    padding: 8px 50px;
+    font-size: 14px;
+    font-family:'AkkuratStd-Regular';
+}
+.btn-submit{
+    background:color( sunny-yellow) !important;
+    border:none !important;
+  }
+
+ .button-small{
+    color: color(black);
+    display: block;
+    border: 1px solid color(gray);
+    text-transform: uppercase;
+    border-radius: 60px;
+    width: auto;
+    padding: 8px 50px;
+    font-size: 12px;
+    font-family: Akkurat-Bold;
+}
+.title-md{
+    color: color(navy-blue);
+    margin-top:32px;
+    padding-left:40px;
+    border-bottom: 1px solid color(navy-blue);
+   display: inline-block;
+   margin-bottom: 25px;
+    font-family: 'akkurat-mono';
+   font-size: 26px;
+}
+
+/* stepper overiding styles */
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+    background: color(sunny-yellow) !important;
+}
+.mat-tab-label-active{
+    color:color(navy-blue) !important;
+    font-weight:bold;
+}
+.mat-tab-label{
+    font-size:16px;
+    color:color(black);
+    font-family: 'AkkuratStd-Regular';
+}
+.mat-tab-header, .mat-tab-nav-bar{
+    border-bottom:1px solid color(sunny-yellow)!important;
+}
+
+/* Change password popup meterial design overiding styles  */
+
+.mat-form-field.mat-focused .mat-form-field-ripple{
+    background-color: color(sunny-yellow) !important;
+}
+.form-container .example-full-width[_ngcontent-c0] {
+    width: 100%;
+    padding-bottom: 25px;
+}
+.form-container .mat-form-field-label{
+    width:800% !important;
+  
+}
+.form-container .mat-form-field-underline{
+    width:80% !important;	
+    
+}
+.mat-form-field-appearance-legacy .mat-form-field-label {
+    color:black;
+}
+
+/* Form fields meterial design overiding styles  */
+
+.describe .mat-form-field-appearance-legacy .mat-form-field-underline {
+    height: 1px !important;
+    border-bottom: 1px solid lightgray !important;
+}
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    height: 0px !important;
+    border-bottom: 1px dotted rgb(190, 184, 184) !important;
+}
+
+.mat-form-field {
+    display: block !important;
+}
+.mat-form-field-label-wrapper{
+    top:-18px !important;
+}
+
+
+/* Pop-over design overiding styles  */
+
+.notification-pop-over-wrapper .popover-body {
+    padding-left: 5px;
+    padding-right: 25px;
+}
+.dots-pop-over .popover-body{
+padding-right: 30px;
+}
+.dots-pop-over .bs-popover-bottom{
+    left:1060px !important;
+ 
+}
+.notification-pop-over-wrapper .bs-popover-bottom{
+      left:850px !important;
+      max-width: 450px !important;
+}
+
+.notification-pop-over-wrapper  .bs-popover-bottom .arrow{
+    left:87% !important;
+}
+.dots-pop-over .bs-popover-bottom .arrow{
+    left:84% !important;
+}
+
+// Guage style over-ride
+
+.reading-label{
+    font-size: 22px !important;
+    color:white !important;
+    font-family: 'AkkuratStd-Regular';
+
+}   
+.reading-block{
+    color:yellow !important;
+    font-size: 50px !important;
+    font-family: 'AkkuratStd-Regular';
+    line-height: 125px !important;
+}
+/* Icons  */
+
+
+@font-face {
+    font-family: 'Navigation-icons';
+    src:  url('/assets/icons/Navigation-icons.eot?hthupc');
+    src:  url('/assets/icons/Navigation-icons.eot?hthupc#iefix') format('embedded-opentype'),
+      url('/assets/icons/Navigation-icons.ttf?hthupc') format('truetype'),
+      url('/assets/icons/Navigation-icons.woff?hthupc') format('woff'),
+      url('/assets/icons/Navigation-icons.svg?hthupc#Navigation-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'Navigation-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /*  Popup meterial overiding styles */
+
+  .mat-dialog-container {
+    position: relative;
+    padding-top: 8px !important;
+    padding-left: 5px !important;
+}
+.pop-up-container .mat-form-field-appearance-legacy .mat-form-field-underline {
+    border-bottom: 1px solid rgb(190, 184, 184) !important;
+}
+
+.home-slider-container .controls {
+    width: 4% !important;
+    margin-left: 48% !important;
+    top: 90% !important;
+}
+// Spinner style over-riding 
+
+// .mat-progress-spinner circle, .mat-spinner circle{
+//     stroke:color(skyblue) !important;
+// }
+
+
+
+
+.mat-datepicker-toggle {
+    background: url("/assets/images/arrow-left.svg") no-repeat !important;
+}

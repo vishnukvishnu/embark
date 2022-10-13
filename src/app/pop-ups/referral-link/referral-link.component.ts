@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialogRef, MatDialog} from '@angular/material';
-
+import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 @Component({
   selector: 'app-referral-link',
   templateUrl: './referral-link.component.html',

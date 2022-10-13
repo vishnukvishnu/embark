@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MatDialogRef, MatDialog } from '@angular/material';
-import { MAT_DIALOG_DATA } from '@angular/material';
+import {MatDialog, MatDialogRef} from '@angular/material/dialog';
+import {MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms'
 import { SuccessPopupComponent } from '../success-popup/success-popup.component';
 
@@ -18,8 +18,7 @@ export class DeclinePopupComponent implements OnInit {
   
   constructor(public thisDialogRef: MatDialogRef<DeclinePopupComponent>,
     public dialog: MatDialog,
-    @Inject(MAT_DIALOG_DATA) public data: String) {
-  }
+    @Inject(MAT_DIALOG_DATA) public data: String) {}
 
   ngOnInit() {
   }
