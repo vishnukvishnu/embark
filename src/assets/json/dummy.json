@@ -1,0 +1,59 @@
+
+
+
+{
+  "navigations": [
+    {
+      "image": "../assets/images/personal-s.svg",
+      "statusamount":"60%",
+      "category":"My offer letter",
+      "status": "Accepted",
+      "navigation":"View"
+     },
+     {
+      "image": "../assets/images/personal-s.svg",
+      "statusamount":"60%",
+      "category":"Profile",
+      "status": "Not compleated",
+      "navigation":"Update Now"
+     },
+     {
+      "image": "../assets/images/loaHover.svg",
+      "statusamount":"60%",
+      "category":"Online Forms",
+      "status": "In - Progress",
+      "navigation":"Update Now"
+     },
+     {
+      "image": "../assets/images/workExpHover.svg",
+      "statusamount":"60%",
+      "category":"Travel Details",
+      "status": "Not applicable",
+      "navigation":"Update now"
+     },
+     {
+      "image": "../assets/images/educationHover.svg",
+      "statusamount":"60%",
+      "category":"Joining Details",
+      "status": "Updated by HR",
+      "navigation":"View"
+     }
+  ],
+   "managerDetails": [
+    {
+      "image": "../assets/images/profile.png",
+      "name":"David Smith",
+      "role":"Reporting",
+      "phone":"9545786124",
+      "mail":"davidsmit@wipro.com"
+    },
+    {
+      "image": "../assets/images/profile.png",
+      "name":"Monica Jonson",
+      "role":"HR manager",
+      "phone":"88452172544",
+      "mail":"monicajonson@wipro.com"
+    }
+  ]
+
+}

@@ -1,0 +1,327 @@
+<section>
+  <div class="offer-header-wrapper">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 offer-let-details">
+        <div class="nav-back-home" (click)="backhome()">
+          <span class="icon-back_arrow"></span>
+          <p>Back to home</p>
+        </div>
+        <h3 class="title-md">Online forms</h3>
+        <span class="form-no">Total forms 7</span>
+        <button class="button-bold" (click)="openGuideline()">Guidelines</button>
+      </div>
+    </div>
+    <div class="row slider-container">
+      <div id="container">
+        <div ng2-carouselamos class="slides-wrapper" [items]="items" [width]="1050" [$prev]="prev" [$next]="next" [$item]="item">
+        </div>
+
+
+        <ng-template #prev>
+          <div (click)="leftStatus()" [ngClass]="lstatus ? 'active':'inactive'" class="button-wrapper left">
+            <!-- <img src="/assets/images/back.svg" id="left" /> -->
+            <span class="icon-arrow_drop_left" id="left"></span>
+          </div>
+        </ng-template>
+
+
+        <ng-template #next>
+          <div (click)="rightStatus()" [ngClass]="rstatus ? 'active':'inactive'" class="button-wrapper right">
+            <!-- <img class = "arrow" src="/assets/images/arrow-right.svg" id="right" /> -->
+            <span class="icon-arrow_drop_right" id="right"></span>
+          </div>
+        </ng-template>
+
+        <ng-template #item let-item let-i="index">
+
+          <div class="items">
+            <p class="title">{{ item.title }}</p>
+            <div class="desc-wrapper">
+              <span [ngClass]="item.color"></span>
+              <p>{{item.status}}</p>
+            </div>
+          </div>
+        </ng-template>
+        <!-- <div class="down-arrow"></div> -->
+      </div>
+    </div>
+
+  </div>
+  <div class="offer-let-details-wrapper">
+    <div class="offer-let-details-subwrapper">
+      <h3 class="title-md">Form 11</h3>
+      <div class="row personal-detail-wrapper">
+
+        <div class="row validation-remark " style="display:none;">
+          <div class="remark-icon-circle">
+            <span class="icon-info"></span>
+          </div>
+          <div class="validation-remark-content">
+            <P>You have declined the offer letter related on 23 jan,2017 04:05:40 PM</P>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Firstname">
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Lastname">
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Fathers name">
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Gender ">
+            </mat-form-field>
+          </div>
+
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput [matDatepicker]="dobpicker" placeholder="Date of birth">
+              <mat-datepicker-toggle matSuffix [for]="dobpicker">
+                <mat-icon matDatepickerToggleIcon svgIcon="datepicker"></mat-icon>
+              </mat-datepicker-toggle>
+              <mat-datepicker #dobpicker></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Nationality">
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Mobile number">
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="email ID">
+            </mat-form-field>
+          </div>
+          </div>
+
+        <p>Present employment details</p>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <mat-form-field class="example-full-width">
+              <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+              <mat-datepicker-toggle matSuffix [for]="picker">
+                <mat-icon matDatepickerToggleIcon svgIcon="datepicker"></mat-icon>
+              </mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <p>KYC details</p>
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Bank account number">
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="IFS code for the branch">
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Adhar number">
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="PAN(permenent account number">
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <p class="toggle-desc">Whether earlier member of Employees Provident fund sheme, 1952</p>
+          </div>
+          <div class="col-sm-12 col-md-2 button-switch">
+            <input type="checkbox" id="providennt-switch" class="switch" checked />
+            <label for="providennt-switch" class="lbl-off">No</label>
+            <label for="providennt-switch" class="lbl-on">Yes</label>
+          </div>
+          <div class="col-sm-12 col-md-4 ">
+            <p class="toggle-desc">Whether earlier member of Employees Provident fund sheme, 1952</p>
+          </div>
+          <div class="col-sm-12 col-md-2 button-switch">
+            <input type="checkbox" id="pension-switch" class="switch" checked />
+            <label for="pension-switch" class="lbl-off">No</label>
+            <label for="pension-switch" class="lbl-on">Yes</label>
+          </div>
+        </div>
+
+
+        <p>Previous employment details(Un-expected)</p>
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Establishment name">
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Establishment address">
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="PF account number">
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput [matDatepicker]="dojpicker" placeholder="Date of joing">
+              <mat-datepicker-toggle matSuffix [for]="dojpicker">
+                <mat-icon matDatepickerToggleIcon svgIcon="datepicker"></mat-icon>
+              </mat-datepicker-toggle>
+              <mat-datepicker #dojpicker></mat-datepicker>
+            </mat-form-field>
+          </div>
+
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput [matDatepicker]="doepicker" placeholder="Date of exit">
+              <mat-datepicker-toggle matSuffix [for]="doepicker">
+                <mat-icon matDatepickerToggleIcon svgIcon="datepicker"></mat-icon>
+              </mat-datepicker-toggle>
+              <mat-datepicker #doepicker></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Sheme certification no">
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="PPO no(if used)">
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="No contributory period(NCP) days">
+            </mat-form-field>
+          </div>
+        </div>
+
+        <p>Previous employment details(For Exempted trust)</p>
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Trust name">
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Trust address">
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="UAN number">
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Member of EPS account number">
+            </mat-form-field>
+          </div>
+
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput [matDatepicker]="unexpicker" placeholder="Date of joing">
+              <mat-datepicker-toggle matSuffix [for]="unexpicker">
+                <mat-icon matDatepickerToggleIcon svgIcon="datepicker"></mat-icon>
+              </mat-datepicker-toggle>
+              <mat-datepicker #unexpicker></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput [matDatepicker]="unexdoepicker" placeholder="Date of Exit">
+              <mat-datepicker-toggle matSuffix [for]="unexdoepicker">
+                <mat-icon matDatepickerToggleIcon svgIcon="datepicker"></mat-icon>
+              </mat-datepicker-toggle>
+              <mat-datepicker #unexdoepicker></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Scheme certificate no(if issued).">
+            </mat-form-field>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Non contributory period(NCP) days">
+            </mat-form-field>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-2">
+              <p class="toggle-desc">International worker</p>
+            </div>
+            <div class="col-sm-12 col-md-1 button-switch inter-switch-wrapper">
+              <input type="checkbox" id="inter-switch" class="switch" checked />
+              <label for="inter-switch" class="lbl-off">No</label>
+              <label for="inter-switch" class="lbl-on">Yes</label>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Favorite food">
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-3">
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Passport number">
+              </mat-form-field>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <mat-form-field class="example-full-width">
+                    <input matInput [matDatepicker]="valpicker" placeholder="validity of passport from">
+                    <mat-datepicker-toggle matSuffix [for]="valpicker">
+                      <mat-icon matDatepickerToggleIcon svgIcon="datepicker"></mat-icon>
+                    </mat-datepicker-toggle>
+                    <mat-datepicker #valpicker></mat-datepicker>
+                  </mat-form-field>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <mat-form-field class="example-full-width">
+                    <input matInput [matDatepicker]="valtopicker" placeholder="validity of passport to">
+                    <mat-datepicker-toggle matSuffix [for]="valtopicker">
+                      <mat-icon matDatepickerToggleIcon svgIcon="datepicker"></mat-icon>
+                    </mat-datepicker-toggle>
+                    <mat-datepicker #valtopicker></mat-datepicker>
+                  </mat-form-field>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="addend-let-validate">
+    <div class="button-wrapper">
+      <!-- <input type="file" (change)="handleFileInput($event.target.files)" #pdfupload> -->
+      <button class="button-bold" (click)="previewForm()">
+        Save & preview
+      </button>
+      <button class="button-bold btn-submit" (click)="backhome()">Submit for verification</button>
+    </div>
+  </div>
+
+</section>

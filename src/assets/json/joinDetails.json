@@ -1,0 +1,31 @@
+ [
+    {
+      "label":"Date of joing",
+      "value":"10 mar, 2019"
+    },
+    {
+      "label":"on boarding city",
+      "value":"Bangalore"
+    },
+    {
+      "label":"On boarding venue",
+      "value":"Ec 4, Bangalore"
+    },
+    {
+      "label":"Reporting time",
+      "value":"08:02:00 AM"
+    },
+    {
+      "label":"On boarding spoc name",
+      "value":"Rajiv kumar"
+    },
+    {
+      "label":"On boarding spoc emil ID",
+      "value":"Rajivkumar@wipro.com"
+    },
+    {
+      "label":"On boarding spoc mobile",
+      "value":"7541254125"
+    }
+   
+  ]

@@ -1,0 +1,67 @@
+
+
+.pop-up-container{
+
+    .header{
+        img{
+            width:16%;
+        }
+        .detials-header{
+            color: #002D72;
+            font-size: 20px;
+            border-bottom: 1px solid #002D72;
+            margin-top: 10px;
+            font-family: 'akkurat-mono';
+            position: absolute;
+            left: 0px;
+            padding-left:45px;
+            top: 26px;
+            line-height: 20px;
+        }
+        .icon-close{
+            display: block;
+            float: right;
+            font-size: 22px;
+            padding-top: 10px;
+            padding-right: 10px;
+            cursor: pointer;
+        }
+    }
+    .input-wrapper{
+        padding-left: 30px;
+        padding-right: 20px;
+        
+.form-fielsds{
+    padding-top: 20px;
+    font-family: AkkuratStd-Regular;
+    padding-left: 5px;
+}
+    .button-container{
+        float: right;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        .button-bold{
+            background: #ffda29;
+            border:1px solid lightgray;
+            font-size: 15px;
+            color:black;
+            display: block;
+            text-transform: uppercase;
+            border-radius: 60px;
+            width: auto;
+            padding: 5px 30px;
+            font-size: 14px;
+            font-family: Akkurat-Bold;
+        }
+        .cancel-button{
+            float: left;
+            margin-right: 25px;
+            background: white;
+        }
+    }
+}
+}
+
+
+
+

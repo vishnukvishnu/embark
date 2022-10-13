@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Form 11",
+        "color": "dcolor",
+        "status": "form yet to be filled"
+    },
+    {
+        "title": "Declaration undertaking",
+        "color": "ycolor",
+        "status": "Form saved, pending for submision"
+    },
+    {
+        "title": "Email internet usage policy",
+        "color": "bcolor",
+        "status": "form submitte, pending for verification"
+    },
+    {
+        "title": "Gratuity nomination",
+        "color": "gcolor",
+        "status": "verification compleated"
+    },
+    {
+        "title": "Email internet usage policy",
+        "color": "dcolor",
+        "status": "form yet to be filled"
+    },
+    {
+        "title": "Declaration undertaking",
+        "color": "ycolor",
+        "status": "Form saved, pending for submision"
+    },
+    {
+        "title": "ratuity nomination",
+        "color": "bcolor",
+        "status": "form submitte, pending for verification"
+    },
+    {
+        "title": "Gratuity nomination",
+        "color": "gcolor",
+        "status": "verification compleated"
+    }
+]

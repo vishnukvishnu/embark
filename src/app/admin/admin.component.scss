@@ -1,0 +1,198 @@
+@import "/../../scss/variables";
+
+/* offer-letter page */
+
+section{
+    .offer-header-wrapper{
+       background: color(navy-blue);
+       width: 100%;
+       height: 525px;
+       font-family: AkkuratStd-Regular;
+       position: relative;
+       overflow: hidden;
+       padding-top: 80px;
+       .offer-let-details{
+           z-index: 1;
+           margin-top: 50px;
+           padding-left: 15px;
+          
+           .nav-back-home{
+               padding-left:115px;
+               cursor: pointer;
+               opacity: .8;
+            span{
+                   font-size: 20px;
+                   color: color(sunny-yellow);
+                   display: block;
+                   float: left;
+               }
+               p{
+                   color: color(sunny-yellow);
+                   padding-left: 15px;
+                   display: inline-block;
+                   margin-bottom: 15px;
+               }
+           }
+           .row{
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 10px;
+               .description{
+                color:color(sunny-yellow);
+                margin-bottom: 5px;
+               }
+               .value{
+                color:color(white);
+               }
+           }
+       }
+   }
+
+   .offer-let-details-wrapper{
+       width:100%;
+       height: auto;
+       background:#f2f2f2;
+       .offer-let-details-subwrapper{
+           background: color(white);
+           width: 86%;
+           margin-left: 7% !important;
+           border-radius: 10px;
+           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+           position: relative; 
+           top: -200px;
+           height: auto;
+           padding-bottom:35px;
+           font-family:AkkuratStd-Regular;
+
+           .title-md{
+               color: color(navy-blue);
+               border-bottom: 1px solid color(navy-blue);
+               padding-top: 10px;
+               padding-left: 40px; 
+           }  
+           .row{
+            margin-left:40px;
+            padding-right: 100px;
+            .mand-skills{
+                font-size: 18px;
+            }
+           }
+
+           .job-decs-wrapper{
+               .experian-para{
+                margin-top:30px;
+               }
+               ul{
+                   li{
+                    font-size: 12px;
+                    margin-bottom: 8px;
+                    padding-left: 10px;
+                   }
+               }
+           }
+           .role-response-wrapper{
+            margin-left: 40px;
+            padding-bottom: 40px;
+               p{
+                   margin-bottom: 5px;
+               }
+               .button-wrapper{
+                float:right;
+                margin-right: 40px;
+                button{
+                 background: color(sunny-yellow);
+                 padding: 8px 25px;
+                }
+            }
+           }
+       
+   }
+
+
+}
+
+   }
+
+
+
+
+  .job-details{
+        background: color(white);
+        width: 86%;
+        margin-left: 7% !important;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        position: relative;
+        top: -150px;
+        .title-md{
+            color: color(navy-blue);
+            border-bottom: 1px solid color(navy-blue);
+            padding-top: 10px;
+            padding-left: 40px; 
+        }  
+        .row .col-md-4{
+            flex: 0 0 28.333333%;
+            max-width: 28.333333%;
+            margin-left: 4%;
+            margin-bottom: 50px;
+            background: #f2f2f2;
+            padding-left: 30px;
+            padding-top: 15px;
+            font-family: akkuratStd-Regular;
+            margin-top: 20px;
+            margin-bottom: 75px;
+            .role{
+                color: color(navy-blue);
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 0px;
+                margin-top: 12px;
+            }
+            .faded-adress{
+                font-size: 14px !important;
+            }
+            .faded{
+                color:color(gray);
+                margin-bottom: 0px;
+                font-size: 16px;
+            }
+            .domain{
+                font-weight: bold;
+                margin-top: 30px;
+                font-size: 16px;
+            }
+            button{
+                color: color(white);
+                background: color(navy-blue);
+                margin-top: 30px;
+                margin-bottom: 25px;
+                padding: 8px 20px;
+            }
+        }
+        }
+
+
+.title-md{
+  color:color(white);
+    margin-top:10px;
+    padding-left:150px;
+    border-bottom: 1px solid color(white);
+   display: inline-block;
+   margin-bottom: 25px;
+   font-family: 'akkurat-mono';
+   font-size: 24px;
+}
+.button-bold{
+    font-size: 15px;
+    color: color(black);
+    display: block;
+    border:none;
+    text-transform: uppercase;
+    border-radius: 60px;
+    width: auto;
+    padding: 8px 50px;
+    font-size: 14px;
+    font-family: Akkurat-Bold;
+}
+
+

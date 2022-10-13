@@ -1,0 +1,51 @@
+[
+  {
+    "image": "../assets/images/loaHover.svg",
+    "statusmark":"gcompletion-circle",
+    "statusicon":"icon-check_mark",
+    "category":"My offer letter",
+    "status": "Accepted",
+    "disabled":"",
+    "navigation":"View"
+   },
+   {
+    "image": "../assets/images/personal-s.svg",
+    "statusmark":"rcompletion-circle",
+    "statusamount":"60%",
+    "category":"Profile",
+    "status": "Not compleated",
+    "disabled":"",
+    "navigation":"Update Now"
+   },
+   {
+    "image": "../assets/images/loaHover.svg",
+    "statusmark":"",
+    "statusamount":"",
+    "category":"Online Forms",
+    "status": "In - Progress",
+    "disabled":"",
+    "navigation":"Update Now"
+   },
+   {
+    "image": "../assets/images/workExpHover.svg",
+    "statusmark":"",
+    "statusamount":"",
+    "category":"Travel Details",
+    "status": "Not applicable",
+    "disabled":"disabled",
+    "navigation":"Update now"
+   },
+   {
+    "image": "../assets/images/educationHover.svg",
+    "statusmark":"",
+    "statusicon":"",
+    "category":"Joining Details",
+    "status": "Updated by HR",
+    "disabled":"",
+    "navigation":"View"
+   }
+]
+
+
+
+

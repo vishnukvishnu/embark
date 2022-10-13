@@ -1,0 +1,93 @@
+@import "/../../scss/variables";
+
+//  Profile container
+ 
+section{
+    .offer-header-wrapper{
+       background: color(navy-blue);
+       width: 100%;
+       height: 530px;
+       font-family: AkkuratStd-Regular;
+       position: relative;
+       overflow: hidden;
+       padding-top: 80px;
+       .offer-let-details{
+           z-index: 1;
+           margin-top: 25px;
+           padding-left: 15px;
+       }
+       .preview-close:hover{
+           cursor: pointer;
+       }
+       .preview-close{
+        margin-left: 60px;
+        margin-top: 40px;
+        p{
+            height: 35px;
+            width: 35px;
+            background: color(sunny-yellow);
+            border-radius: $border-radius;
+
+        .icon-close{
+            color: color(black);
+            font-size: 22px;
+            position: absolute;
+            top: 6px;
+            left: 21px;
+        }
+    }
+       }
+   }
+   .offer-let-details-wrapper{
+       width:100%;
+       height: 925px;
+       background:lavender;
+       .offer-let-details-subwrapper{
+           background: color(white);
+           width: 86%;
+           margin-left: 7% !important;
+           border-radius: 10px;
+           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+           position: relative; 
+           top: -325px;
+           height: auto;
+           padding-bottom:35px;
+           height: 1200px;
+           }
+
+   }
+     
+
+   }
+   
+   .title-md{
+       color:color(white);
+       margin-top:10px;
+       padding-left:150px;
+       border-bottom: 1px solid color(white);
+      display: inline-block;
+      margin-bottom: 25px;
+      font-family: 'akkurat-mono';
+   }
+   .button-bold{
+       font-size: 15px;
+       color: color(black);
+       display: block;
+       border:none;
+       text-transform: uppercase;
+       border-radius: 60px;
+       width: auto;
+       padding: 8px 50px;
+       font-size: 14px;
+       font-family: Akkurat-Bold;
+   }
+
+   .rcolor{
+    background:color(ruby-red);
+   }
+   .bcolor{
+    background:color(navy-blue);
+   }
+   .gcolor{
+    background:color(apple-grean);
+   }

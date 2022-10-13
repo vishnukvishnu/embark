@@ -1,0 +1,19 @@
+
+<div class="pop-up-container">
+    <div class = "header">
+    <img src="/assets/images/doc-shape.svg" alt="">
+    <p class="detials-header" >Success</p>
+    <span class="icon-close" (click) = "remarkStatus()"></span>
+  </div>
+    <div class="input-wrapper">
+  <div class="form-fielsds">
+    <p *ngIf = "acceptSuccessMsg">{{acceptSuccessMsg}}</p>
+    <p *ngIf = "!decSuccessMsg">{{decSuccessMsg}}</p>
+    <p *ngIf = "!joinSuccessMsg">{{joinSuccessMsg}}</p>
+    <p *ngIf = "!editJoinMsg">{{editJoinMsg}}</p>
+  </div>
+  <div class="button-container">
+  <button class="button-bold" (click) = "submit()" >Ok</button>
+  </div>
+  </div>
+  </div>

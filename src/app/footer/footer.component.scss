@@ -1,0 +1,51 @@
+
+
+@import "/../../scss/variables";
+  
+  /* FOOTER */
+
+  footer{
+    background: color(navy-blue);
+    color: color(white);
+    .footer-container ul li{
+        list-style-type: none;
+        display: inline-block;   
+     }
+    .footer-container:after{
+        display:block;
+        content:'';
+        clear: both;
+    }
+    .navigations{
+        float: left;
+        margin-left: 10%;
+        margin-bottom: 0px;
+        font-family: 'akkurat-mono';
+        font-size: 16px;
+        opacity:.8;
+        li{
+            padding: 25px 20px;
+        }
+    }
+    p {
+        float: left;
+    padding-top: 30px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+    letter-spacing:1px;
+    font-family: AkkuratStd-Light;
+    font-size: 12px;
+    }
+    .footer-social-media {
+        float:right;
+        margin-right: 110px;
+        margin-bottom: 0px;
+        span{
+            font-weight: bold;
+        }
+        li{
+            padding: 25px 8px;
+            font-size: 20px;
+        }
+    }
+}

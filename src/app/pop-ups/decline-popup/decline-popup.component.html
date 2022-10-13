@@ -1,0 +1,22 @@
+
+
+<div class="pop-up-container">
+  <div class = "header">
+  <img src="/assets/images/doc-shape.svg" alt="">
+  <p class="title-md" >Decline Offer</p>
+  <span class="icon-close" (click) = "oncloseConfirm()"></span>
+</div>
+  <form  #f="ngForm" class="input-wrapper">
+<mat-form-field class="form-fielsds">
+  <textarea matInput type="text" name = 'decSuccess' [(ngModel)] = "decSuccess"
+   placeholder="Reson for decline offer" required></textarea>
+</mat-form-field>
+<div class="button-container">
+<button class="button-bold button" (click) = "oncloseConfirm()">Cancel</button>
+<button [disabled]="f.invalid" type="submit" class = "button-bold" (click) = "openSuccess()">Submit</button>
+</div>
+</form>
+</div>
+
+
+

@@ -1,0 +1,155 @@
+
+@import "/../../scss/variables";
+/* offer-letter-view page */
+
+section{
+    .offer-header-wrapper{
+       background: color(navy-blue);
+       width: 100%;
+       height: 450px;
+       font-family: AkkuratStd-Regular;
+       position: relative;
+       overflow: hidden;
+       padding-top: 80px;
+       .offer-let-details{
+           z-index: 1;
+           margin-top: 50px;
+           padding-left: 15px;
+           opacity: .8;
+           .nav-back-home{
+               padding-left:115px;
+               cursor: pointer;
+            span{
+                   font-size: 20px;
+                   color: color(sunny-yellow);
+                   display: block;
+                   float: left;
+               }
+               p{
+                   color: color(sunny-yellow);
+                   padding-left: 15px;
+                   display: inline-block;
+                   margin-bottom: 15px;
+               }
+           }
+       }
+   }
+   .offer-let-details-wrapper{
+       width:100%;
+       height: 600px;
+       background: #f2f2f2;
+       .offer-let-details-subwrapper{
+           background: color(white);
+           width: 86%;
+           margin-left: 7% !important;
+           border-radius: 10px;
+           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+           position: relative; 
+           top: -200px;
+           height: auto;
+           padding-bottom:35px;
+           font-family:AkkuratStd-Regular;
+           .title-md{
+               color: color(navy-blue);
+               border-bottom: 1px solid color(navy-blue);
+               padding-top: 35px;
+               padding-left: 40px; 
+           }  
+           .personal-detail-wrapper{
+
+                padding-left: 50px;
+
+                .col-md-3{
+                    margin-top:30px;
+        }
+           }
+           .locale-map-container{
+            padding-left: 75px;
+            padding-right: 15px;
+            position: relative;
+            img{
+                position: absolute;
+                top: -15px;
+                height: 300px;
+                width: 300px;
+                left: -102px;
+            }
+            .locale-address-wrapper{
+                border: 1px solid #dedede;
+                border-radius: 10px;
+                .title{
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding-top:100px;
+                    padding-bottom: 25px;
+                    position: absolute;
+                    top: 10px;
+                }
+                .values{
+                    position: absolute;
+                    top: 150px;
+                    font-size: 14px;
+                    p{
+                        margin-bottom: 0px;
+                    }
+                }
+               .map-container {
+                    padding-left: 35px;
+                    position: relative;
+                    overflow: hidden;
+                }
+                .col-md-8{
+                    padding-right: 0px;
+                    .agm-map{
+                         height: 260px;
+                         agm-map {
+                            height: 260px;
+                        }
+                    }
+                }
+            }
+            .button-wrapper{
+                margin-top: 25px;
+                
+                button{
+                    padding: 6px 20px;
+                    background: color(white);
+                    border: 1px solid #909090;
+                    height: 32px;
+                }
+                p{
+                    margin-top: 8px;
+                }
+            }
+ 
+           }
+           
+        }
+   }
+}
+
+
+.title-md{
+    color:color(white);
+    margin-top:10px;
+    padding-left:150px;
+    border-bottom: 1px solid color(white);
+   display: inline-block;
+   margin-bottom: 25px;
+   font-family: 'akkurat-mono';
+   font-size: 24px;
+}
+.button-bold{
+    font-size: 15px;
+    color: color(black);
+    display: block;
+    border:none;
+    text-transform: uppercase;
+    border-radius: 60px;
+    width: auto;
+    padding: 8px 50px;
+    font-size: 14px;
+    font-family: Akkurat-Bold;
+}
+
+

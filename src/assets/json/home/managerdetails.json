@@ -1,0 +1,16 @@
+ [
+    {
+      "image": "../assets/images/profile.png",
+      "name":"David Smith",
+      "role":"Reporting",
+      "phone":"9545786124",
+      "mail":"davidsmit@wipro.com"
+    },
+    {
+      "image": "../assets/images/profile.png",
+      "name":"Monica Jonson",
+      "role":"HR manager",
+      "phone":"88452172544",
+      "mail":"monicajonson@wipro.com"
+    }
+  ]

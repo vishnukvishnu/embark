@@ -1,0 +1,51 @@
+
+[
+    {
+      "post":"Consaltant - Non Cataloged",
+      "place":"Hyderabad, India",
+      "category":"MAS",
+      "code":"job code:856556",
+      "imageOne":"icon-calendar",
+      "statusOne":"job applied on",
+      "valueOne":"10 Aug, 2018",
+      "imageTwo":"icon-event_note",
+      "statusTwo":"Application Status",
+      "valueTwo":"Applied",
+      "imageThree":"icon-business",
+      "statusThree":"jobstatus",
+      "valuethree":"open",
+      "color":"gcolor"
+    },
+    {
+     "post":"Consaltant - Non Cataloged",
+     "place":"Hyderabad, India",
+     "category":"MAS",
+     "code":"job code:856556",
+     "imageOne":"icon-calendar",
+     "statusOne":"job applied on",
+     "valueOne":"10 Aug, 2018",
+     "imageTwo":"icon-event_note",
+     "statusTwo":"Application Status",
+     "valueTwo":"Applied",
+     "imageThree":"icon-business",
+     "statusThree":"jobstatus",
+     "valuethree":"closed",
+     "color":"rcolor"
+   },
+   {
+     "post":"Consaltant - Non Cataloged",
+     "place":"Hyderabad, India",
+     "category":"MAS",
+     "code":"job code:856556",
+     "imageOne":"icon-calendar",
+     "statusOne":"job applied on",
+     "valueOne":"10 Aug, 2018",
+     "imageTwo":"icon-event_note",
+     "statusTwo":"Application Status",
+     "valueTwo":"Applied",
+     "imageThree":"icon-business",
+     "statusThree":"jobstatus",
+     "valuethree":"open",
+     "color":"gcolor"
+   }
+  ]

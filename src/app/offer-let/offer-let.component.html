@@ -1,0 +1,149 @@
+<section>
+
+    <div class="offer-let-details-wrapper">
+        <div class="offer-header-wrapper">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 offer-let-details">
+                    <div class="nav-back-home" (click)="backhome()">
+                        <span class="icon-back_arrow"></span>
+                        <p>Back to home </p>
+                    </div>
+                    <h3 class="title-md">Congratulations Shiva Das</h3>
+                    <p>We are very happy to have you onboard and are preparing to make you
+                        <span>Senior project magager</span>
+                        Find near places from your office location easily.onboard and are preparing to make you
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="offer-let-details-subwrapper">
+            <h3 class="title-md">Offer and joining details</h3>
+            <div class="row">
+
+                <div *ngFor="let join of joinDetails; let i = index;" class="col-sm-12 col-md-4 join-detail-card">
+                    <div [ngClass]="join.color" class="join-detail-card-circle">
+                        <img class="icons" [src]="join.image" alt="">
+                        <!-- <span class="icon-event_note"></span> -->
+                    </div>
+                    <div class="join-detail-card-details">
+                        <p class="join-detail-card-header">{{join.title}}</p>
+                        <p class="join-detail-card-value">{{join.subtitle}}</p>
+                    </div>
+                    <span *ngIf="!successStatus && !remarkStuus" [ngClass]="i==2 ? 'show':'hide'" (click)="ediJoinDate()" class="icon-edit"></span>
+                </div>
+
+            </div>
+            <h3 *ngIf="!editJoinReason" class="title-md">Offer letter</h3>
+
+            <mat-tab-group *ngIf="editJoinReason && !successStatus && !remarkStuus" class="stepper-container">
+                <mat-tab label=" Offer letter"> </mat-tab>
+                <mat-tab label=" Addendum letter"> </mat-tab>
+            </mat-tab-group>
+            <div class="page-count">
+                <strong>Page 01</strong>
+                <span>/12</span>
+            </div>
+            <div class="offer-letter">
+                <img src="/assets/images/WiproLogo.png" alt="">
+
+                <div id="myelement"></div>
+
+                <div class="offer-letter-content">
+                    <p>May 18,2017</p>
+                    <strong>Emp Id:214521 Swaroop santhosh raman</strong>
+                    <p class="receiver">Dear Swaroop santhosh raman,</p>
+                    <p>
+                        We are pleased to offer you a temperory assignment
+                        <strong>Hewlet peckward company</strong>
+                        at
+                        <strong>Boise</strong> in the united states, with effect from
+                        <strong>February28, 2015</strong>or the actual travel date.
+                    </p>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                        text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting, remaining essentially
+
+                    </p>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                        text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting, remaining essentially
+
+                    </p>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                        text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                        a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                        typesetting, remaining essentially
+
+                    </p>
+
+                </div>
+            </div>
+            <div *ngIf="!remarkStuus && !successStatus" class="button-wrapper">
+                <button class="button-bold">Print</button>
+                <button class="button-bold download-button">download</button>
+            </div>
+            <div *ngIf="successStatus" class="validation-remark">
+                <div class="remark-icon-circle green-circle">
+                    <span class="icon-check_mark"></span>
+                </div>
+                <div class="validation-remark-content">
+                    <P class="succes-msg">You have accepted the offer letter dated on
+                        <span class="date"> {{date | date:'mediumDate'}}</span>
+                        <span class="time">{{date | date:'mediumTime'}}</span>
+                    </P>
+                </div>
+            </div>
+            <h3 *ngIf="remarkStuus && !successStatus" class="title-md">Remarks</h3>
+            <div *ngIf="remarkStuus  && !successStatus" class="validation-remark">
+                <div class="remark-icon-circle red-circle">
+                    <span class="icon-close"></span>
+                </div>
+                <P class="status-msg">You have declained the offer letter dated on
+                    <span class="date"> {{date | date:'mediumDate'}}</span>
+                    <span class="time">{{date | date:'mediumTime'}}</span>
+                </P>
+                <div class="validation-remark-content">
+                    <span>Reason for decline offer</span>
+                    <p class="remark-status">{{remarkStuus}}</p>
+                </div>
+            </div>
+
+            <div *ngIf="editJoinReason && !successStatus && !remarkStuus" class="validation-remark">
+                <div class="remark-icon-circle red-circle">
+                    <span class="icon-info"></span>
+                </div>
+                <P class="status-msg next-child">Requst for in change in date of joing submitted on
+                    <span class="date"> {{joinDate | date:'mediumDate'}}</span>
+                    <span class="time">{{joinDate | date:'mediumTime'}}</span>
+                </P>
+                <P class="status-msg approval-msg">
+                    Once approved you will receive an addendum letter
+                </P>
+                <div class="validation-remark-content">
+                    <span>Reason</span>
+                    <p>{{editJoinReason}}</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="addend-let-validate">
+            <div *ngIf="!remarkStuus && !successStatus">
+                <div class="error-msg">
+                    <span class="icon-info"></span>
+                    <p> On acceptence of addendum letter, you registerd User ID would be considered as your e-signature</p>
+                </div>
+                <div class="button-wrapper">
+                    <button [attr.disabled]="editJoinReason ? 'disabled' : null" class="button-bold" (click)="openDecline()">Decline </button>
+                    <button [attr.disabled]="editJoinReason ? 'disabled' : null" class="button-bold btn-submit" (click)="openSuccess()">Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>

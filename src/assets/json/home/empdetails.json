@@ -1,0 +1,27 @@
+ [
+    {
+      "icon":"icon-mac_monitor",
+      "border":"redborder",
+      "borderBottom":"rborderbottom",
+      "color":"rcolor",
+      "data":"Your laptop",
+      "status":"procurement request raised"
+    },
+    {
+      "icon":"icon-mac_monitor",
+      "border":"blueborder",
+      "borderBottom":"bborderbottom",
+      "color":"bcolor",
+      "data":"Your laptop",
+      "status":"procurement request raised"
+    },
+    {
+      "icon":"icon-mac_monitor",
+      "border":"greenborder",
+      "borderBottom":"gborderbottom",
+      "color":"gcolor",
+      "data":"Your laptop",
+      "status":"procurement request raised"
+    }
+
+  ]

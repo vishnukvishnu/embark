@@ -1,0 +1,348 @@
+@import "/../../scss/variables";
+/* online form page */
+
+section{
+    .offer-header-wrapper{
+       background: color(navy-blue);
+       width: 100%;
+       height: 600px;
+       font-family: AkkuratStd-Regular;
+       position: relative;
+       overflow: hidden;
+       padding-top: 80px;
+       
+       .offer-let-details{
+           z-index: 1;
+           margin-top: 50px;
+           padding-left: 15px;
+           opacity: .8;
+           .nav-back-home{
+               padding-left:115px;
+               cursor: pointer;
+             
+            span{
+                   font-size: 20px;
+                   color: color(sunny-yellow);
+                   display: block;
+                   float: left;
+               }
+               p{
+                   color: color(sunny-yellow);
+                   padding-left: 15px;
+                   display: inline-block;
+                   margin-bottom: 15px;
+               }
+           }
+           .form-no{
+            color: color(sunny-yellow);
+            border-radius: 50px;
+            background: #04204c;
+            padding: 8px 15px;
+            margin-left: 30px;
+           }
+           button{
+            float: right;
+            border: 1px solid white;
+            color: color(white);
+            background: color(navy-blue);
+            padding: 5px 20px;
+            margin-right: 75px;
+            margin-top: 10px;
+           }
+       }
+       .slider-container{
+        height: 150px;
+        width: 86%;
+        margin-left: 7%;
+        position: relative;
+        .down-arrow{
+            position: absolute;
+            top: 120px;
+            left: 175px;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid color(sunny-yellow);
+            width: 0;
+            height: 0;
+        
+        }
+        .items{
+           border-bottom: 5px solid color(sunny-yellow);       
+        }
+        .items{
+            max-width: 300px;
+            height: 110px;
+            background:color(white);
+            margin-left: 6px;
+            margin-right: 6px;
+            margin-top: 10px;
+            border-radius: 8px;
+            .title{
+                color: color(navy-blue);
+                width: 252px;
+                padding-left: 20px;
+                font-weight: bold;
+                margin-top: 15px;
+                font-size: 16px;
+            }
+            .desc-wrapper{
+                width:252px;
+                padding-left: 20px;
+                span{
+                    width: 12px;
+                    height: 12px;
+                    border-radius: $border-radius;
+                    float: left;
+                    position: absolute;
+                }
+                p{
+                    float: left;
+                    margin-left: 30px;
+                    color: color(gray);
+                    font-size: 13px;
+                }
+            }
+        }
+        .button-wrapper{
+            height: 110px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            span{
+
+                font-size: 30px;
+                display: block;
+                padding-top: 40px;
+            
+
+              }
+            }
+            .active{
+                background: color(sunny-yellow);
+                color: black;
+            }
+            .inactive{
+                background: #04204c;
+                color: white;
+            }
+       }    
+   }
+   .offer-let-details-wrapper{
+       width:100%;
+       height: 1250px;
+       background:#fefefe;
+       .offer-let-details-subwrapper{
+           background: color(white);
+           width: 86%;
+           margin-left: 7% !important;
+           border-radius: 10px;
+           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+           position: relative; 
+           top: -200px;
+           height: auto;
+           padding-bottom:35px;
+           font-family:AkkuratStd-Regular;
+           .title-md{
+               color: color(navy-blue);
+               border-bottom: 1px solid color(navy-blue);
+               padding-top: 35px;
+               padding-left: 40px; 
+           }  
+           .personal-detail-wrapper{
+            p{
+                margin: 30px 0px 15px 60px;
+                font-size: 16px;
+                color: color(navy-blue);
+            }
+            .row{
+                padding-left: 40px;
+                .col-md-4{
+                .toggle-desc{
+                    color: color(black);
+                  margin-left: 20px;
+                  font-size: 12px;
+            }
+        }
+                .col-md-3{
+                    margin-top: 25px;
+                    padding-left: 35px;
+                }
+                .col-md-6{
+                    margin-top: 25px;
+                    padding-left: 35px;
+                }
+                .col-md-2{
+                    margin-top: 25px;
+                    padding-left: 35px;
+                    // margin-left: 75px;
+                }
+                .col-md-1{
+                    margin-top: 50px;
+                }
+             
+                .row{
+                    padding-left: 20px;
+                    .toggle-desc{
+                        color: color(black);
+                      margin-left: 0px;
+                      font-size: 12px;
+                }
+                }
+            }
+          
+        }
+   }
+}
+   .addend-let-validate{
+       position: relative;
+       top: -85px;
+       .button-wrapper{ 
+        float: right;
+        margin-right: 100px;
+           button{
+               float: left;
+               padding: 6px 25px;
+               border:1px solid #909090;
+               margin-left: 16px;
+               background: color(white);
+           }
+       }
+   }
+   }
+
+
+
+
+
+
+
+.title-md{
+    color:color(white);
+    margin-top:10px;
+    padding-left:150px;
+    border-bottom: 1px solid color(white);
+   display: inline-block;
+   margin-bottom: 25px;
+   font-family: 'akkurat-mono';
+   font-size: 24px;
+}
+.button-bold{
+    font-size: 15px;
+    color: color(black);
+    display: block;
+    border:none;
+    text-transform: uppercase;
+    border-radius: 60px;
+    width: auto;
+    padding: 8px 50px;
+    font-size: 14px;
+    font-family: Akkurat-Bold;
+}
+
+    /* button toogel */
+.button-switch {
+    font-size: 12px;
+    height: 0.875em;
+    margin-bottom: 0.625em;
+    position: relative;
+    width: 7.5em;
+    margin-top: 20px;
+  }
+  .button-switch .lbl-off,
+  .button-switch .lbl-on {
+    cursor: pointer;
+    display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 1.5em;
+    position: absolute;
+    top: 0.2em;
+    transition: opacity 0.25s ease-out 0.1s;
+    text-transform: uppercase;
+  }
+  .button-switch .lbl-off {
+    right: 13.4375em;
+    color: color(white);
+  }
+  .inter-switch-wrapper .lbl-off{
+    right: 4.4375em !important;
+  }
+  .button-switch .lbl-on {
+    color: #fefefe;
+    opacity: 0;
+    left: 0.4375em;
+  }
+  .button-switch .switch {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 0;
+    font-size: 1em;
+    left: 0;
+    line-height: 0;
+    outline: none;
+    position: absolute;
+    top: 0;
+    width: 0;
+  }
+  .button-switch .switch:before, .button-switch .switch:after {
+    content: '';
+    font-size: 1em;
+    position: absolute;
+  }
+  .button-switch .switch:before {
+    border-radius: 1.25em;
+    background: color(gray);
+    height: 1.875em;
+    left: -0.25em;
+    top: -0.1875em;
+    transition: background-color 0.25s ease-out 0.1s;
+    width: 4.5em;
+  }
+  .button-switch .switch:after {
+    box-shadow: 0 .0625em .375em 0 color(gray);
+    border-radius: $border-radius;
+    background: #fefefe;
+    height: 1.5em;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    transition: -webkit-transform 0.25s ease-out 0.1s;
+    transition: transform 0.25s ease-out 0.1s;
+    transition: transform 0.25s ease-out 0.1s, -webkit-transform 0.25s ease-out 0.1s;
+    width: 1.5em;
+  }
+  .button-switch .switch:checked:after {
+    -webkit-transform: translate(2.5em, 0);
+            transform: translate(2.5em, 0);
+  }
+  .button-switch .switch:checked ~ .lbl-off {
+    opacity: 0;
+  }
+  .button-switch .switch:checked ~ .lbl-on {
+    opacity: 1;
+  }
+ 
+  .button-switch .switch:checked:before {
+    background: color(navy-blue);
+  }
+  
+// slider container
+
+  #container {
+    width: 100%;
+    padding: 0;
+    
+  }
+ 
+.dcolor{
+    background: color(gray);
+}
+.gcolor{
+    background: color(apple-grean);
+}
+.bcolor{
+    background: color(skyblue);
+}
+.ycolor{
+background: color(sunny-yellow);
+}

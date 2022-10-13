@@ -1,0 +1,33 @@
+<div class="pop-up-container">
+  <div class="header">
+    <img src="/assets/images/doc-shape.svg" alt="">
+    <p class="title-md">Edit Joining Date</p>
+    <span class="icon-close" (click)="oncloseConfirm()"></span>
+  </div>
+  <form novalidate #f="ngForm" class="input-wrapper">
+    <mat-form-field class="form-fielsds">
+      <input matInput [matDatepicker]="expicker" placeholder="Existing Joining date">
+      <mat-datepicker-toggle matSuffix [for]="expicker">
+        <mat-icon matDatepickerToggleIcon svgIcon="datepicker"></mat-icon>
+      </mat-datepicker-toggle>
+      <mat-datepicker #expicker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field class="form-fielsds">
+      <input matInput name="joinDate" [(ngModel)]="joinDate" [matDatepicker]="sugpicker" placeholder="Suggested joining date" required>
+      <mat-datepicker-toggle matSuffix [for]="sugpicker">
+        <mat-icon matDatepickerToggleIcon svgIcon="datepicker"></mat-icon>
+      </mat-datepicker-toggle>
+      <mat-datepicker #sugpicker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field class="form-fielsds">
+      <textarea name="editReason" [(ngModel)]="editReason" matInput type="text" placeholder="Reason" required>
+      </textarea>
+    </mat-form-field>
+
+    <div class="button-container">
+      <button class="button-bold button" (click)="oncloseConfirm()">Cancel</button>
+      <button class="button-bold" [disabled]="f.invalid" type="submit" (click)="openSuccess()">Submit</button>
+    </div>
+  </form>
+</div>

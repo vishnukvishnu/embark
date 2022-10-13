@@ -1,0 +1,217 @@
+
+@import "/../../scss/variables";
+/* offer-letter-view page */
+
+section{
+    .offer-header-wrapper{
+       background: color(navy-blue);
+       width: 100%;
+       height: 925px;
+       font-family: AkkuratStd-Regular;
+       position: relative;
+       overflow: hidden;
+       padding-top: 80px;
+       .offer-let-details{
+           z-index: 1;
+           margin-top: 50px;
+           padding-left: 15px;
+           .title-md{
+            opacity: .8;
+           }
+          .circle {
+            width:70px;
+            height:70px;
+            border-radius: $border-radius;
+            border:1px solid color(white);
+            background: color(white);
+           float: left;
+           .circle-icon{
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            width: 40px;
+            height: 45px;
+           }
+        }
+           .job-status{
+            margin-top: 10px;
+            margin-left: 100px;
+            .status{
+                color: color(sunny-yellow);
+                margin-bottom: 0px;
+                font-size: 22px;
+            }
+            .value{
+                color:color(white);
+                font-size: 16px;
+            }
+           }
+
+          
+           .nav-back-home{
+               padding-left:115px;
+               cursor: pointer;
+               opacity: .8;
+            span{
+                   font-size: 20px;
+                   color: color(sunny-yellow);
+                   display: block;
+                   float: left;
+               }
+               p{
+                   color: color(sunny-yellow);
+                   padding-left: 15px;
+                   display: inline-block;
+                   margin-bottom: 15px;
+               }
+           }
+
+           .first-section{
+            width: 48%;
+               float: left;
+               position: relative;
+           }
+           .second-section{
+            width: 48%;
+            float: left;
+            position: relative;
+           }
+       }
+   }
+   .offer-let-details-wrapper{
+       width:100%;
+       height: 825px;
+       background:#f2f2f2;
+       .second-wrapper{
+        top:-600px !important;
+    }
+       .offer-let-details-subwrapper{
+           background: color(white);
+           width: 86%;
+           margin-left: 7% !important;
+           border-radius: 10px;
+           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+           position: relative; 
+           top: -650px;
+           height: auto;
+           padding-bottom:50px;
+           font-family:AkkuratStd-Regular;
+         
+           .title-md{
+               color: color(navy-blue);
+               border-bottom: 1px solid color(navy-blue);
+               padding-top: 35px;
+               padding-left: 40px; 
+           }  
+           .job-detail-wrapper{
+            .col-md-5{
+                padding-left: 0px;
+                border: 1px solid #cdcaca;
+                padding-right: 0px;
+                margin-left: 4.5%;
+                width: 44%;
+                border-radius: 5px;
+                margin-top: 25px;
+                flex: 0 0 44%;
+                max-width: 44%;
+            .job-description{
+                background: #f2f2f2;;
+                padding-left: 15px;
+                margin-left: 0px;
+                padding-bottom: 5px;
+                .post{
+                    color: color(navy-blue);
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-bottom: 5px;
+
+                }
+                .place{
+                    color:color(gray);
+                    font-size: 12px;
+                }
+                .category{
+                    padding-top: 5px;
+                   margin-bottom: 0px;
+                }
+                .code{
+                    margin-bottom: 10px;
+                }
+            }
+            .job-details{
+                padding: 10px 0px;
+                margin-left: 5px;
+                padding-top: 25px;
+                .col-md-4{
+                    padding-right: 0px;
+                    padding-left: 5px;
+                    .circle{
+                        width:45px;
+                        height:45px;
+                        border-radius: $border-radius;
+                        border:1px solid color(navy-blue);
+                       float: left;
+                       .circle-icon{
+                        font-size: 25px;
+                        position: absolute;
+                        top: 10px;
+                        left: 15px;
+                        color:color(navy-blue);
+                       }
+                        
+                    }
+                    .job-status{
+                        float: left;
+                        padding-left: 8px;
+                        margin-top: 5px;
+                        .status{
+                            margin-bottom: 0px;
+                            font-size: 12px;
+                            color: color(gray);
+                            padding-left: 2px;
+                        }
+                        .value{
+
+                        }
+                    }
+                }
+            }
+        }
+           }
+        
+           
+        }
+   }
+}
+
+
+.title-md{
+    color:color(white);
+    margin-top:10px;
+    padding-left:150px;
+    border-bottom: 1px solid color(white);
+   display: inline-block;
+   margin-bottom: 25px;
+   font-family: 'akkurat-mono';
+   font-size: 24px;
+}
+.button-bold{
+    font-size: 15px;
+    color: color(black);
+    display: block;
+    border:none;
+    text-transform: uppercase;
+    border-radius: 60px;
+    width: auto;
+    padding: 8px 50px;
+    font-size: 14px;
+    font-family: Akkurat-Bold;
+}
+
+.rcolor{
+    color:color(ruby-red);
+}
+.gcolor{
+    color:color(apple-grean);
+}

@@ -1,0 +1,349 @@
+<!-- SECTION ONE -->
+
+<section class="first-section">
+    <div class="banner">
+        <span class="red-circle"></span>
+        <div class="row">
+            <div class="col-sm-12 col-md-9 welcome-message">
+
+                <h2>Welcome to the wipro candidate desktop</h2>
+                <P>Explore opportunities beyond bourdaries with Wipro and discover a career for life. At Wipro, our recruitment
+                    processes differ from geography to geography but what remains common to all countries is our transparent
+                    hiring process that lets your track the status of your resume.
+                </P>
+            </div>
+            <div class="col-sm-12 col-md-3 days-remains">
+                <div class="count-circle">
+                    <ngx-gauge [type]="gaugeType" [value]="gaugeValue" [label]="gaugeLabel" [thick]="gaugethick" [size]="gaugesize" [cap]="gaugecap"
+                        [backgroundColor]="backgroundColor" [foregroundColor]="foregroundColor" [min]="minvalue" [max]="maxvalue">
+                    </ngx-gauge>
+                </div>
+                <div class="days-remains-caption">
+                    <p>Left for your</p>
+                    <span>onboarding</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- SECTION TWO -->
+
+<section class="second-section">
+    <div class="profile-navigation">
+
+        <ul class="row">
+            <mat-spinner *ngIf="showLoading"></mat-spinner>
+
+            <li *ngFor="let nav of navigations; let i = index" class="col-sm-12 col-md-2 offer-letter width-set">
+                <div class="count-circle">
+                    <img [src]="nav.image" class="icon-event">
+                    <div [ngClass]="nav.statusmark" class="completion-circle">
+                        <span [ngClass]="nav.statusicon" class="status">{{nav.statusamount}}</span>
+                    </div>
+
+                </div>
+                <div class="profie-details">
+                    <p>{{nav.category}}</p>
+                    <span>{{nav.status}}</span>
+                    <button (click)="navigation(i)" [ngClass]="nav.disabled" class="button-bold">{{nav.navigation}}</button>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <div class="profile-details-container">
+        <div class="row manager-details">
+            <div class="col-sm-12 col-md-8">
+                <h3 class="title-md">Your managers</h3>
+                <div class="row">
+                    <div *ngFor="let detail of managerDetails" class="col-sm-12 col-md-6 manger-contact-details">
+                        <div class="image-wrapper">
+                            <img [src]="detail.image" />
+                        </div>
+                        <div class="manager-details-content">
+                            <p class="name">{{detail.name}}</p>
+                            <p class="role">{{detail.role}}</p>
+                            <div class="email">
+                                <span class="icon-email icon"></span>
+                                <p class="p-icon-email">{{detail.mail}}</p>
+                            </div>
+                            <div class="phone">
+                                <span class="icon-call icon"></span>
+                                <p class="p-icon-call">{{detail.phone}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="profile-detailsb-button button-small">view role hierarchy</button>
+                <h3 class="title-md job-locale">Your job location</h3>
+                <div class="row tower-details">
+                    <div *ngFor="let jobdetial of jobDetails" class="col-sm-12 col-md-4">
+                        <span [className]="jobdetial.icon" id="icon-locale"></span>
+                        <div class="location-details">
+                            <span>{{jobdetial.location}}</span>
+                            <P>{{jobdetial.place}}</P>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="profile-detailsb-button button-small">view map</button>
+            </div>
+            <div class="col-sm-12 col-md-4 meting-image-display">
+                <img class="meeting-image" src="../assets/images/Office_location_image1.png">
+            </div>
+        </div>
+        <div class="row personal-details">
+            <h3 class="title-md">In the wings...</h3>
+            <div class="row welcome-message">
+                <span></span>
+                <p>We are very happy to have you onboard and are preparing to make your day 1 delightful!</p>
+            </div>
+            <div class="row home-slider-container">
+                <div id="container">
+                    <div ng2-carouselamos class="slides-wrapper" [items]="items" [width]="1150" [$prev]="prev" [$next]="next" [$item]="item">
+                    </div>
+
+
+                    <ng-template #prev>
+                        <div (click)="leftStatus()" [ngClass]="lstatus ? 'active':'inactive'" class="button-wrapper left">
+                        </div>
+                    </ng-template>
+
+
+                    <ng-template #next>
+                        <div (click)="rightStatus()" [ngClass]="rstatus ? 'active':'inactive'" class="button-wrapper right">
+                        </div>
+                    </ng-template>
+
+                    <ng-template #item let-item let-i="index">
+
+                        <div [ngClass]="item.borderBottom" class=" items col-sm-12 col-md-4">
+                            <div [ngClass]="item.border" class="count-circle">
+                                <span [className]="item.icon"></span>
+                            </div>
+                            <p [ngClass]="item.color" class="model">{{item.data}}</p>
+                            <p class="description">{{item.status}}</p>
+                        </div>
+                    </ng-template>
+                    <div class="down-arrow"></div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- THIRD SECTION -->
+
+
+<section class="third-section">
+    <div class="map-image-container">
+        <div class="blue-half-circle"></div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6 place-details">
+
+                <h2>Places near by you</h2>
+                <p>Find near places from your office location easily</p>
+            </div>
+            <div class="col-sm-12 col-md-6 location-details">
+                <div class="location-icon">
+                    <span class="icon-location"></span>
+                </div>
+                <div class="location-name">
+                    <h3>Your current location</h3>
+                    <p>Electronic city 4, Tower7</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map-container">
+        <div id="googleMap">
+            <!-- <agm-map [latitude]="lat" [longitude]="long"></agm-map> -->
+        </div>
+    </div>
+</section>
+
+
+<!-- FORTH SECTION -->
+
+<section class="fourth-section">
+    <div class="row job-details">
+        <h2 class="title-md">Recommented Jobs</h2>
+
+        <div class="row">
+            <div *ngFor="let job of recommentedJobs" class="col-sm-12 col-md-4">
+                <p class="role">{{job.role}}</p>
+                <P class="faded faded-adress">{{job.place}}</P>
+                <p class="domain">{{job.section}}</p>
+                <p class="faded">{{job.experience}}</p>
+                <p class="faded">{{job.jobcode}}</p>
+                <button (click)="admin()" class="button-bold">{{job.buttonvalue}}</button>
+            </div>
+        </div>
+        <div class="dots-wrapper">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</section>
+
+
+<!-- FIFTH SECTION -->
+
+<section class="fift-section">
+    <h2 class="title-md">Our Success stories</h2>
+
+    <div class="row imagec-container">
+        <div class="first-column">
+            <div class="image-tp-placed large-image-align">
+                <img src="../assets/images/opportunities2.jpg" alt="">
+                <div class="recomented-job-details">
+                    <button class="background-light-green">Bussiness Process</button>
+                    <p class="title">Lloyds Banking Group Customer Testimonial
+                    </p>
+                    <p class="detail-description">Driving customer when an unknown printer took a galley of type and scrambled it to make a type specimen
+                        book.
+                    </p>
+                </div>
+            </div>
+            <div class="image-btm-placed small-image-align">
+                <img src="../assets/images/feature-careers13.jpg" alt="">
+                <div class="recomented-job-details">
+                    <button class="background-yellow">Consulting</button>
+                    <p class="title">Patnering For success unknown printer took a galley of type and scrambled it to services.
+                    </p>
+                    <p class="detail-description">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+                        not only five
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class=" second-column">
+            <div class="image-tp-placed small-image-align">
+                <img src="../assets/images/bahrin.jpg" alt="">
+                <div class="recomented-job-details">
+                    <button class="background-light-ruby">Application</button>
+                    <p class="title">How Bahrail Steal leveraged Sap an unknown printer took a galley of type
+                    </p>
+                    <p class="detail-description">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+                        not only five
+
+                    </p>
+                </div>
+            </div>
+            <div class="image-btm-placed large-image-align">
+                <img src="../assets/images/feature-careers10.jpg" alt="">
+                <div class="recomented-job-details">
+                    <button class="background-navy">Communications</button>
+                    <p class="title">A New Order With Roborts.
+                        <p class="detail-description">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                            survived not only five survived not unchanged.
+                        </p>
+                </div>
+            </div>
+        </div>
+        <div class="more-link-wrapper">
+            <a href="https://www.wipro.com/" target="_blank">
+                <div class="more-link">
+                    <p>MORE</p>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<!-- SIXTH SECTION -->
+
+<section class="sixth-section">
+    <h2 class="title-md">Experience Wipro</h2>
+    <div class="image-container">
+        <div class="row first-section">
+            <div class="col-sm-12 col-md-6">
+                <img src="../assets/images/img1.jpg" alt="">
+                <div class="recomented-job-details">
+                    <button class="background-yellow">Equal opportunities for all</button>
+                    <p>At wipro it has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                        essentially unchanged.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <img src="../assets/images/homeexplore02.jpg" alt="">
+                <div class="recomented-job-details">
+                    <button class="background-light-green">Bussiness Process</button>
+                    <p>At wipro it has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                        essentially unchanged.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row second-section">
+            <div class="col-sm-12 col-md-12">
+                <img src="../assets/images/img4.jpg" alt="">
+                <div class="recomented-job-details">
+                    <button class="background-ruby">Experience WIPRO</button>
+                    <p>An intentcity it has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged. wipro it has survived not only five centuries www.wipro.com
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- LAST SECTION  -->
+
+<section class="last-section">
+    <h2 class="title-md">Social media</h2>
+    <div class="social-media">
+
+        <div class="row">
+            <div *ngFor="let value of socialValues" class="col-sm-12 col-md-4 ">
+                <a class="anchor" [href]="value.link" target="_blank">
+                    <div class="social-media-icon">
+                        <img [src]="value.image" alt="">
+                    </div>
+                    <h3 class="header">{{value.header}}</h3>
+                    <P class="title">{{value.title}}</P>
+                    <p class="date">{{value.date}}</p>
+                    <p class="description">
+                        {{value.description}}
+                        <a>{{value.hashtag}}</a>
+                        <span>{{value.name}}</span>
+                        <a>{{value.url}}</a>
+                    </p>
+                    <div class="dots-wrapper">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row social-media-content">
+            <div class="col-sm-12 col-md-12">
+                <P>Explore opportunities beyond bourdaries with Wipro and discover a career for life. At Wipro, our recruitment
+                    processes differ from geography to geography but what remains common to all countries is our transparent
+                    hiring process that lets your track the status of your resume.
+                </P>
+                <P>Explore opportunities beyond bourdaries with Wipro and discover a career for life. At Wipro, our recruitment
+                    processes differ from geography to geography but what remains common to all countries is our transparent
+                    hiring process that lets your track the status of your resume.
+                </P>
+            </div>
+        </div>
+    </div>
+</section>

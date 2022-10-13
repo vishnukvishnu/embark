@@ -1,0 +1,52 @@
+
+<header>
+    <div class="header-left-content">
+        <div class="image-wrapper">
+            <img src="../assets/images/WiproLogo.png" alt="">
+            <span></span>
+        </div>
+
+        <div (click) = "backhome()" class="image-title">
+            <span></span>
+            <h3>embark</h3>
+        </div>
+
+    </div>
+    <div class="header-right-content">
+        <div class="icons">
+            <div class="notification-pop-over-wrapper">
+            <span class=" icon-notification" placement="bottom" [popover]="notificationPopover" [outsideClick]="true"
+                [outsideClick]="true">
+            </span>
+              <ng-template #notificationPopover class="notification-pop-over">
+                <div >
+                    <h3 class="detials-header">Notifications</h3>
+                    <ul>
+                     
+                        <li>Activities are pending with you</li>
+                     
+                        <li>Documents are pending with you</li>
+       
+                        <li>pending feedback</li>
+                    </ul>
+                </div>
+            </ng-template>
+        </div>
+          
+            <div class="dots-pop-over">
+            <span class="icon-more_v" #pop="bs-popover" placement="bottom" [popover]="iconpopover" [outsideClick]="true">
+            </span>
+              <ng-template #iconpopover >
+                <div class="pop-over-wrapper" >
+                    <span (click)="jobBasket(pop)">Job basket</span>
+                    <span (click)="changePassword()">Change password</span>
+                    <span>Logout</span>
+                </div>
+            </ng-template>
+        </div>
+        </div>
+        <div class="profile">
+            <img src="../assets/images/profile.png" />
+        </div>
+    </div>
+</header>

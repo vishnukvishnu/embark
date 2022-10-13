@@ -1,0 +1,19 @@
+
+
+[
+    {
+      "icon":"icon-location",
+      "location":"Onboarding location",
+      "place":"sharjapur,bangalore"
+    },
+    {
+      "icon":"icon-sublocation",
+      "location":"towr",
+      "place":"Tower 8"
+    },
+    {
+      "icon":"icon-hotel_building",
+      "location":"cubicle",
+      "place":"035"
+    }
+  ]

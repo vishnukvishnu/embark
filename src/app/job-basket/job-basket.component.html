@@ -1,0 +1,130 @@
+<section>
+  <div class="offer-header-wrapper">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 offer-let-details">
+        <div class="nav-back-home" (click)="backhome()">
+          <span class="icon-back_arrow"></span>
+          <p>Back to home</p>
+        </div>
+        <h3 class="title-md">Job basket</h3>
+      </div>
+
+      <div class="col-sm-12 col-md-6 offer-let-details">
+        <div class="first-section">
+          <div class="circle ">
+            <img class="circle-icon" src="/assets/images/workExpHover.svg" alt="">
+          </div>
+          <div class="job-status">
+            <p class="status">02</p>
+            <p class="value">Jobs applied</p>
+          </div>
+        </div>
+
+        <div class="second-section">
+          <div class="circle ">
+            <img class="circle-icon" src="/assets/images/workExpHover.svg" alt="">
+          </div>
+          <div class="job-status">
+            <p class="status">03</p>
+            <p class="value">Jobs reffered</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="offer-let-details-wrapper">
+    <div class="offer-let-details-subwrapper">
+      <h3 class="title-md">Job applied</h3>
+      <div class="row job-detail-wrapper">
+
+        <div *ngFor="let job of jobApplied" class="col-sm-12 col-md-5">
+          <div class=" job-description">
+            <p class="post">{{job.post}}</p>
+            <p class="place">{{job.place}}</p>
+            <p class="category">{{job.category}}</p>
+            <P class="code">{{job.code}}</P>
+          </div>
+          <div class="row job-details">
+            <div class="col-sm-12 col-md-4">
+              <div class="circle ">
+                <span [ngClass]="job.imageOne" class="circle-icon"></span>
+              </div>
+              <div class="job-status">
+                <p class="status">{{job.statusOne}}</p>
+                <p class="value">{{job.valueOne}}</p>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="circle">
+                <span [ngClass]="job.imageTwo" class="icon-event_note circle-icon"></span>
+              </div>
+              <div class="job-status">
+                <p class="status">{{job.statusTwo}}</p>
+                <p class="value">{{job.valueTwo}}</p>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="circle">
+                <span [ngClass]="job.imageThree" class="circle-icon"></span>
+              </div>
+              <div class="job-status">
+                <p class="status">{{job.statusThree}}</p>
+                <p [ngClass]="job.color" class="value">{{job.valuethree}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="offer-let-details-subwrapper second-wrapper">
+      <h3 class="title-md">Job reffered</h3>
+      <div class="row job-detail-wrapper">
+        <div *ngFor="let job of jobApplied" class="col-sm-12 col-md-5">
+          <div class=" job-description">
+            <p class="post">{{job.post}}</p>
+            <p class="place">{{job.place}}</p>
+            <p class="category">{{job.category}}</p>
+            <P class="code">{{job.code}}</P>
+          </div>
+          <div class="row job-details">
+            <div class="col-sm-12 col-md-4">
+              <div class="circle ">
+                <span [ngClass]="job.imageOne" class="circle-icon"></span>
+              </div>
+              <div class="job-status">
+                <p class="status">{{job.statusOne}}</p>
+                <p class="value">{{job.valueOne}}</p>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="circle">
+                <span [ngClass]="job.imageTwo" class="icon-event_note circle-icon"></span>
+              </div>
+              <div class="job-status">
+                <p class="status">{{job.statusTwo}}</p>
+                <p class="value">{{job.valueTwo}}</p>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="circle">
+                <span [ngClass]="job.imageThree" class="circle-icon"></span>
+              </div>
+              <div class="job-status">
+                <p class="status">{{job.statusThree}}</p>
+                <p [ngClass]="job.color" class="value">{{job.valuethree}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+</section>

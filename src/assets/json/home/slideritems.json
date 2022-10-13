@@ -1,0 +1,50 @@
+[     
+    {
+      "icon":"icon-mac_monitor",
+      "border":"redborder",
+      "borderBottom":"rborderbottom",
+      "color":"rcolor",
+      "data":"Your laptop",
+      "status":"procurement request raised"
+    },
+    {
+      "icon":"icon-idcard",
+      "border":"blueborder",
+      "borderBottom":"bborderbottom",
+      "color":"bcolor",
+      "data":"Your ID badge",
+      "status":"We are waiting for your onboarding day"
+    },
+    {
+      "icon":"icon-guestpass",
+      "border":"greenborder",
+      "borderBottom":"gborderbottom",
+      "color":"gcolor",
+      "data":"Your Bussiness Card",
+      "status":"We are waiting for your onboarding day"
+    },
+    {
+      "icon":"icon-mobile",
+      "border":"redborder",
+      "borderBottom":"rborderbottom",
+      "color":"rcolor",
+      "data":"Your Mobile",
+      "status":"We are waiting for your onboarding day"
+    },
+    {
+      "icon":"icon-stationary",
+      "border":"blueborder",
+      "borderBottom":"bborderbottom",
+      "color":"bcolor",
+      "data":"Your Stationary",
+      "status":"We are waiting for your onboarding day"
+    },
+    {
+      "icon":"icon-name_plate",
+      "border":"greenborder",
+      "borderBottom":"gborderbottom",
+      "color":"gcolor",
+      "data":" Bussiness Card",
+      "status":"procurement request raised"
+    }
+  ]

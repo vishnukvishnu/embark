@@ -1,0 +1,117 @@
+<section>
+
+    <div class="offer-let-details-wrapper">
+        <div class="offer-header-wrapper">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 offer-let-details">
+                    <div class="nav-back-home" (click)="backhome()">
+                        <span class="icon-back_arrow"></span>
+                        <p>Back to home</p>
+                    </div>
+                    <h3 class="title-md">My profile</h3>
+                </div>
+            </div>
+        </div>
+        <div class="offer-let-details-subwrapper">
+            <h3 class="title-md">Personal details</h3>
+            <div class="row personal-detail-wrapper">
+                <div class="col-sm-12 col-md-3">
+                    <div class="profile-picturec-wrapper">
+                        <input hidden type="file" (change)="handleFileInput($event.target.files)" accept="image/*"
+                            #fileInput>
+                        <div class="image-circle">
+                            <img (click)="fileInput.click()" [src]="imgUrl">
+                        </div>
+                        <div class="status-wrapper">
+                            <p *ngIf="!isTrue" class="description">Upload profile picture</p>
+                            <!-- <div  (click)="imageValidate()" *ngIf = "isTrue"  [ngClass] = "!isFlag ? '':'div-hide'"  class="pending-approval-wrapper">
+                                            <span class="icon-status_pending"></span>
+                                            <p class="approval-status">Pending for approval</p>
+                                        </div> -->
+                        </div>
+
+                        <div *ngIf="isTrue" [ngClass]="!isFlag ? '':'div-hide'" class="status-reason">
+                            <div class="status">
+                                <h5>
+                                    <span class="icon-close"></span>
+                                </h5>
+                                <p>Rejected</p>
+                            </div>
+                            <div class="reject-msg">
+                                <p tooltip="Photograph is as per guildline." placement="bottom">REASON FOR REJECTION</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-9 abt-yself-wrapper">
+                    <div class="row">
+                        <div *ngFor="let person of personalDetails" class="col-sm-12 col-md-4">
+                            <mat-form-field class="example-full-width">
+                                <input matInput [placeholder]="person.label" [value]="person.value">
+                            </mat-form-field>
+                        </div>
+
+                    </div>
+                    <div [hidden]="!isTrue" class="validation-remark">
+                        <div class="remark-icon-circle picture-valid">
+                            <span class="icon-info"></span>
+                        </div>
+                        <div class="validation-remark-content picture-valid-msg">
+                            <P>Please Upload your passport size photosize photograph whith white background. file size
+                                should
+                                not be more than 2 MB. File can be in .JPG,.PNG,.IMG,.BMP,.GIF,.JPEG format.
+
+                            </P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="title-md">Education Details</h3>
+            <div class="row edu-detail-wrapper">
+                <div *ngFor="let education of educationDetails" class="col-sm-12 col-md-3">
+                    <mat-form-field class="example-full-width">
+                        <input matInput [placeholder]="education.label" [value]="education.value">
+                    </mat-form-field>
+                </div>
+            </div>
+            <h3 class="title-md">Work Experiece</h3>
+            <div class="row work-detail-wrapper">
+                <div *ngFor="let work of workDetails" class="col-sm-12 col-md-3">
+                    <mat-form-field class="example-full-width">
+                        <input matInput [placeholder]="work.label" [value]="work.value">
+                    </mat-form-field>
+                </div>
+            </div>
+            <h3 class="title-md">Describe about yourself</h3>
+            <div class="abt-yself-wrapper">
+                <div class="validation-remark">
+                    <div class="remark-icon-circle">
+                        <span class="icon-info"></span>
+                    </div>
+                    <div class="validation-remark-content">
+                        <P>
+                            We will use your description to introduce you to the team.
+                        </P>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 describe">
+                        <mat-form-field class="example-full-width">
+                            <textarea matInput value="Describe"></textarea>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="addend-let-validate">
+            <div class="button-wrapper">
+                <button class="button-bold" (click)="backhome()">Cancel</button>
+                <button class="button-bold" (click)="backhome()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>

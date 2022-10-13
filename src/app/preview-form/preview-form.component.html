@@ -1,0 +1,17 @@
+<section>
+    <div class="offer-header-wrapper">
+        <div class="row">
+            <div class="col-sm-10 col-md-10 offer-let-details">
+                <h3 class="title-md">Preview Form</h3>
+            </div>
+            <div class="col-sm-1 col-md-1 preview-close">
+                    <p><span class="icon-close" (click) = "backOnlineform()"></span> </p>
+                </div>
+        </div>
+    </div>
+    <div class="offer-let-details-wrapper">
+        <div class="offer-let-details-subwrapper">
+              <pdf-viewer style = " height:750px;width:100%;" [src]="pdfUrl"></pdf-viewer>
+        </div>
+    </div>
+</section>

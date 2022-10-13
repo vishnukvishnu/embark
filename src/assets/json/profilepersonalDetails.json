@@ -1,0 +1,34 @@
+ [
+    {
+      "label":"Firstname",
+      "value":"Shiva"
+    },
+    {
+      "label":"Lastname",
+      "value":"Das"
+    },
+    {
+      "label":"Fathers name",
+      "value":"Krishnakumar"
+    },
+    {
+      "label":"Gender",
+      "value":"Male"
+    },
+    {
+      "label":"Date of birth",
+      "value":"12 June, 1995"
+    },
+    {
+      "label":"Nationality",
+      "value":"Indian"
+    },
+    {
+      "label":"Mobile number",
+      "value":"9675456125"
+    },
+    {
+      "label":"email ID",
+      "value":"Shiva@gmail.com"
+    }
+  ]

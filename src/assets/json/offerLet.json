@@ -1,0 +1,20 @@
+[
+    {
+      "image":"/assets/images/offerNormal.svg",
+      "color":"gcolor",
+      "title":"Mothly Gross",
+      "subtitle":"INR 7350000"
+    },
+    {
+      "image":"/assets/images/work-exp.svg",
+      "color":"bcolor",
+      "title":"Joining Location",
+      "subtitle":"Bangalure"
+    },
+    {
+      "image":"/assets/images/offerNormal.svg",
+      "color":"rcolor",
+      "title":"Joining Date",
+      "subtitle":"3/12/2018"
+    }
+  ]

@@ -1,0 +1,50 @@
+<section>
+  <div class="offer-header-wrapper">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 offer-let-details">
+        <div class="nav-back-home" (click)="backhome()">
+          <span class="icon-back_arrow"></span>
+          <p>Back to home</p>
+        </div>
+        <h3 class="title-md">My profile</h3>
+      </div>
+    </div>
+  </div>
+  <div class="offer-let-details-wrapper">
+    <div class="offer-let-details-subwrapper">
+      <h3 class="title-md">Joining Details</h3>
+      <div class="row personal-detail-wrapper">
+        <div *ngFor = "let join of joinDetails" class="col-sm-12 col-md-3">
+          <mat-form-field class="example-full-width">
+            <input matInput [placeholder] ="join.label" [value]="join.value">
+          </mat-form-field>
+        </div>
+      </div>
+
+      <h3 class="title-md">Location & address</h3>
+      <div class="row locale-map-container">
+      <div class="row locale-address-wrapper">
+        <div class="col-sm-12 col-md-4 map-container" >
+            <img src="/assets/images/doc-shape.svg" alt="">
+          <p class="title">Wipro Limited,EC-111, Tower 8</p>
+          <div class="values">
+          <p >Ec3, Indra Nagar, Electronic city phase1</p>
+          <p >Electronic city, Bangaluru,Karnadaka 560012</p>
+        </div>
+        </div>
+        <div class="col-sm-12 col-md-8" >
+          
+            <div class = "agm-map">
+              <!-- <agm-map [latitude]="lat" [longitude]="long"></agm-map> -->
+            </div>
+        </div>
+      </div>
+      <div class="row button-wrapper">
+        <P class="col-sm-12 col-md-4">If you like to change the date of joining</P>
+        <button class="button-bold" (click) = "ediJoinDate()">Click here</button>
+      </div>
+      </div>
+    </div>
+  </div>
+
+</section>
