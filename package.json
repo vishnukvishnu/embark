@@ -20,7 +20,6 @@
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
     "bootstrap": "^4.1.1",
-    "ng2-carouselamos": "^4.1.0",
     "ng2-pdf-viewer": "^9.1.2",
     "ngx-bootstrap": "^9.0.0",
     "ngx-gauge": "^6.0.0",
